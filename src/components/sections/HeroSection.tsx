@@ -79,7 +79,7 @@ export const HeroSection: React.FC = () => {
           {/* Contest Details */}
           <div className="text-center mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <p className="text-lg md:text-xl text-white/90 mb-2">
-              بوابتك إلى مهن المستقبل
+              الجامعة الليبية الدولية
             </p>
           </div>
           
