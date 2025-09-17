@@ -4,132 +4,159 @@
     "ar": {
       "name": "إدارة الرعاية الصحية",
       "pitch": "قيادة منظومات الصحة بكفاءة وابتكار",
-      "about": "برنامج يؤهل الطلبة لإدارة المستشفيات والمنشآت الصحية بأحدث المعايير العالمية",
+      "about": "برنامج يؤهل الطلبة لإدارة المستشفيات والمنشآت الصحية بأحدث المعايير العالمية مع التركيز على النظام الصحي الليبي",
       "core_courses": ["سياسات صحية", "إدارة خدمات طبية", "اقتصاديات صحية", "تحليل بيانات صحية", "إدارة الجودة الصحية", "أخلاقيات الرعاية الصحية"],
       "careers": ["مدير منشأة صحية", "محلل سياسات صحية", "منسق جودة طبية", "مستشار إداري صحي"]
     },
     "en": {
-      "name": "Healthcare Management",
+      "name": "Healthcare Management Program",
       "pitch": "Lead healthcare systems with efficiency and innovation",
-      "about": "Prepares students to manage hospitals and healthcare facilities with the latest global standards",
+      "about": "Prepares students to manage hospitals and healthcare facilities with the latest global standards with focus on the Libyan healthcare system",
       "core_courses": ["Health Policy", "Medical Service Management", "Health Economics", "Health Data Analytics", "Healthcare Quality Management", "Healthcare Ethics"],
       "careers": ["Healthcare Facility Manager", "Health Policy Analyst", "Medical Quality Coordinator", "Healthcare Administrative Consultant"]
     },
     "pdf": "/brochures/healthcare.pdf",
-    "icon": "stethoscope"
+    "icon": "stethoscope",
+    "image": "/images/healthcare-management.jpg"
   },
   {
     "slug": "business-administration",
     "ar": {
       "name": "إدارة الأعمال",
       "pitch": "ريادة الأعمال في العصر الرقمي",
-      "about": "تأهيل قادة أعمال المستقبل بالمهارات الإدارية والتقنية المتطورة",
+      "about": "تأهيل قادة أعمال المستقبل بالمهارات الإدارية والتقنية المتطورة في البيئة الليبية والإقليمية",
       "core_courses": ["إدارة استراتيجية", "ريادة الأعمال", "التحليل المالي", "إدارة الموارد البشرية", "التسويق الرقمي", "إدارة العمليات"],
       "careers": ["مدير عام", "رائد أعمال", "مستشار إداري", "محلل أعمال"]
     },
     "en": {
-      "name": "Business Administration",
+      "name": "Business Administration Program",
       "pitch": "Entrepreneurship in the digital age",
-      "about": "Prepare future business leaders with advanced managerial and technical skills",
+      "about": "Prepare future business leaders with advanced managerial and technical skills in the Libyan and regional environment",
       "core_courses": ["Strategic Management", "Entrepreneurship", "Financial Analysis", "Human Resource Management", "Digital Marketing", "Operations Management"],
       "careers": ["General Manager", "Entrepreneur", "Management Consultant", "Business Analyst"]
     },
     "pdf": "/brochures/business.pdf",
-    "icon": "briefcase"
+    "icon": "briefcase",
+    "image": "/images/business-administration.jpg"
   },
   {
     "slug": "finance-banking",
     "ar": {
       "name": "التمويل والمصارف",
       "pitch": "خبراء التمويل والاستثمار",
-      "about": "إعداد متخصصين في النظم المصرفية والأسواق المالية العالمية",
+      "about": "إعداد متخصصين في النظم المصرفية والأسواق المالية العالمية مع التركيز على القطاع المصرفي الليبي",
       "core_courses": ["النظم المصرفية", "إدارة المخاطر", "الاستثمار والتمويل", "الأسواق المالية", "التمويل الإسلامي", "التحليل الائتماني"],
       "careers": ["مصرفي استثماري", "محلل مالي", "مدير مخاطر", "مستشار مالي"]
     },
     "en": {
-      "name": "Finance and Banking",
+      "name": "Finance and Banking Program",
       "pitch": "Finance and investment experts",
-      "about": "Prepare specialists in banking systems and global financial markets",
+      "about": "Prepare specialists in banking systems and global financial markets with focus on the Libyan banking sector",
       "core_courses": ["Banking Systems", "Risk Management", "Investment & Finance", "Financial Markets", "Islamic Finance", "Credit Analysis"],
       "careers": ["Investment Banker", "Financial Analyst", "Risk Manager", "Financial Advisor"]
     },
     "pdf": "/brochures/finance.pdf",
-    "icon": "banknote"
+    "icon": "banknote",
+    "image": "/images/finance-banking.jpg"
   },
   {
     "slug": "marketing",
     "ar": {
       "name": "التسويق",
       "pitch": "إبداع التسويق الرقمي والتقليدي",
-      "about": "تكوين مسوقين محترفين في عالم التجارة الإلكترونية والتسويق المتكامل",
+      "about": "تكوين مسوقين محترفين في عالم التجارة الإلكترونية والتسويق المتكامل في السوق الليبي والإقليمي",
       "core_courses": ["التسويق الرقمي", "سلوك المستهلك", "إدارة العلامة التجارية", "تحليل السوق", "التسويق عبر وسائل التواصل", "التسويق الدولي"],
       "careers": ["مدير تسويق", "متخصص تسويق رقمي", "محلل سوق", "مدير علامة تجارية"]
     },
     "en": {
-      "name": "Marketing",
+      "name": "Marketing Program",
       "pitch": "Digital and traditional marketing creativity",
-      "about": "Train professional marketers in e-commerce and integrated marketing",
+      "about": "Train professional marketers in e-commerce and integrated marketing in the Libyan and regional market",
       "core_courses": ["Digital Marketing", "Consumer Behavior", "Brand Management", "Market Analysis", "Social Media Marketing", "International Marketing"],
       "careers": ["Marketing Manager", "Digital Marketing Specialist", "Market Analyst", "Brand Manager"]
     },
     "pdf": "/brochures/marketing.pdf",
-    "icon": "megaphone"
+    "icon": "megaphone",
+    "image": "/images/marketing.jpg"
   },
   {
     "slug": "project-management",
     "ar": {
       "name": "إدارة المشاريع",
       "pitch": "قيادة المشاريع الكبرى بنجاح",
-      "about": "إعداد مديري مشاريع معتمدين دولياً بأحدث المنهجيات",
+      "about": "إعداد مديري مشاريع معتمدين دولياً بأحدث المنهجيات مع التركيز على مشاريع التطوير في ليبيا",
       "core_courses": ["تخطيط المشاريع", "إدارة المخاطر", "إدارة الجودة", "إدارة الفرق", "منهجيات أجايل", "تحليل التكلفة والعائد"],
       "careers": ["مدير مشاريع", "مستشار إدارة مشاريع", "محلل مشاريع", "منسق برامج"]
     },
     "en": {
-      "name": "Project Management",
+      "name": "Project Management Program",
       "pitch": "Successfully lead major projects",
-      "about": "Prepare internationally certified project managers with the latest methodologies",
+      "about": "Prepare internationally certified project managers with the latest methodologies with focus on development projects in Libya",
       "core_courses": ["Project Planning", "Risk Management", "Quality Management", "Team Management", "Agile Methodologies", "Cost-Benefit Analysis"],
       "careers": ["Project Manager", "Project Management Consultant", "Project Analyst", "Program Coordinator"]
     },
     "pdf": "/brochures/project-management.pdf",
-    "icon": "clipboard"
+    "icon": "clipboard",
+    "image": "/images/project-management.jpg"
   },
   {
     "slug": "law",
     "ar": {
       "name": "القانون",
       "pitch": "خبراء القانون والعدالة",
-      "about": "تأهيل قانونيين متميزين في النظم القانونية المحلية والدولية",
+      "about": "تأهيل قانونيين متميزين في النظم القانونية المحلية والدولية مع التركيز على القانون الليبي والشريعة الإسلامية",
       "core_courses": ["القانون المدني", "القانون التجاري", "القانون الدولي", "القانون الجنائي", "قانون العمل", "أصول المحاكمات"],
       "careers": ["محامي", "مستشار قانوني", "قاضي", "محكم قانوني"]
     },
     "en": {
-      "name": "Law",
+      "name": "Law Program",
       "pitch": "Law and justice experts",
-      "about": "Qualify distinguished lawyers in local and international legal systems",
+      "about": "Qualify distinguished lawyers in local and international legal systems with focus on Libyan law and Islamic jurisprudence",
       "core_courses": ["Civil Law", "Commercial Law", "International Law", "Criminal Law", "Labor Law", "Legal Procedures"],
       "careers": ["Lawyer", "Legal Consultant", "Judge", "Legal Arbitrator"]
     },
     "pdf": "/brochures/law.pdf",
-    "icon": "scale"
+    "icon": "scale",
+    "image": "/images/law.jpg"
   },
   {
     "slug": "english-global-communication",
     "ar": {
       "name": "الإنجليزية والاتصال العالمي",
       "pitch": "جسر التواصل مع العالم",
-      "about": "إعداد متخصصين في اللغة الإنجليزية والتواصل متعدد الثقافات",
+      "about": "إعداد متخصصين في اللغة الإنجليزية والتواصل متعدد الثقافات لربط ليبيا بالعالم",
       "core_courses": ["الأدب الإنجليزي", "الترجمة الفورية", "التواصل متعدد الثقافات", "الكتابة الأكاديمية", "تحليل الخطاب", "التواصل الرقمي"],
       "careers": ["مترجم", "محرر محتوى", "مسؤول علاقات دولية", "معلم لغة إنجليزية"]
     },
     "en": {
-      "name": "English & Global Communication",
+      "name": "English & Global Communication Program",
       "pitch": "Bridge communication with the world",
-      "about": "Prepare specialists in English language and multicultural communication",
+      "about": "Prepare specialists in English language and multicultural communication to connect Libya with the world",
       "core_courses": ["English Literature", "Simultaneous Translation", "Multicultural Communication", "Academic Writing", "Discourse Analysis", "Digital Communication"],
       "careers": ["Translator", "Content Editor", "International Relations Officer", "English Language Teacher"]
     },
     "pdf": "/brochures/english.pdf",
-    "icon": "globe"
+    "icon": "globe",
+    "image": "/images/english-communication.jpg"
+  },
+  {
+    "slug": "msc-healthcare-management",
+    "ar": {
+      "name": "ماجستير إدارة الرعاية الصحية",
+      "pitch": "برنامج دراسات عليا متقدم في إدارة الأنظمة الصحية",
+      "about": "برنامج الماجستير في إدارة الرعاية الصحية يوفر تعليماً متقدماً للمهنيين العاملين في القطاع الصحي الليبي لتطوير مهاراتهم الإدارية والقيادية",
+      "core_courses": ["إدارة الأنظمة الصحية المتقدمة", "القيادة في الصحة", "السياسات الصحية", "البحث العلمي الصحي", "إدارة الجودة الصحية", "الاقتصاد الصحي المتقدم"],
+      "careers": ["مدير عام مستشفى", "مستشار سياسات صحية", "باحث صحي أول", "مدير إقليمي صحي"]
+    },
+    "en": {
+      "name": "MSc. Healthcare Management Program",
+      "pitch": "Advanced postgraduate program in healthcare systems management",
+      "about": "The MSc Healthcare Management program provides advanced education for professionals working in the Libyan healthcare sector to develop their administrative and leadership skills",
+      "core_courses": ["Advanced Healthcare Systems Management", "Healthcare Leadership", "Health Policy", "Health Research Methods", "Healthcare Quality Management", "Advanced Health Economics"],
+      "careers": ["Chief Hospital Administrator", "Health Policy Consultant", "Senior Health Researcher", "Regional Health Director"]
+    },
+    "pdf": "/brochures/msc-healthcare-management.pdf",
+    "icon": "stethoscope",
+    "image": "/images/msc-healthcare.jpg"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "ar": {
     "hero": {
-      "headline": "كلية العلوم الإنسانية والاجتماعية – بوابتك إلى مهن المستقبل",
-      "subline": "تعرّف بسرعة على برامجنا وفرص المسارات المهنية",
+      "headline": "كلية العلوم الإنسانية والاجتماعية - الجامعة الليبية الدولية للعلوم الطبية",
+      "subline": "نصنع قادة المستقبل في ليبيا من خلال برامج أكاديمية متميزة ومرافق حديثة",
       "cta_programs": "استكشاف البرامج",
       "cta_brochure": "تحميل البروشور"
     },
@@ -85,12 +85,12 @@
       ]
     },
     "stats": {
-      "programs": "7",
+      "programs": "8",
       "programs_label": "برامج أكاديمية",
-      "innovations": "15",
+      "innovations": "20",
       "innovations_label": "مبادرة ابتكار",
-      "graduates": "2,500",
-      "graduates_label": "قصة خريج"
+      "graduates": "3,200",
+      "graduates_label": "خريج متميز"
     },
     "lead_form": {
       "title": "احصل على معلومات مفصلة",
@@ -103,9 +103,9 @@
     },
     "footer": {
       "contact": "تواصل معنا",
-      "address": "الرياض، المملكة العربية السعودية",
-      "phone": "+966-11-123-4567",
-      "email": "info@limu.edu.sa",
+      "address": "بنغازي، ليبيا",
+      "phone": "+218-61-123-4567",
+      "email": "hss@limu.edu.ly",
       "social": "تابعنا",
       "map": "الموقع على الخريطة",
       "privacy": "سياسة الخصوصية",
@@ -114,8 +114,8 @@
   },
   "en": {
     "hero": {
-      "headline": "Faculty of Humanities & Social Sciences – Your Gateway to Future Careers",
-      "subline": "Quickly discover our programs and career path opportunities",
+      "headline": "Faculty of Humanities & Social Sciences - Libyan International Medical University",
+      "subline": "Shaping Libya's future leaders through distinguished academic programs and modern facilities",
       "cta_programs": "Explore Programs",
       "cta_brochure": "Download Brochure"
     },
@@ -198,12 +198,12 @@
       ]
     },
     "stats": {
-      "programs": "7",
+      "programs": "8",
       "programs_label": "Academic Programs",
-      "innovations": "15",
+      "innovations": "20",
       "innovations_label": "Innovation Initiatives",
-      "graduates": "2,500",
-      "graduates_label": "Graduate Stories"
+      "graduates": "3,200",
+      "graduates_label": "Distinguished Graduates"
     },
     "lead_form": {
       "title": "Get Detailed Information",
@@ -216,9 +216,9 @@
     },
     "footer": {
       "contact": "Contact Us",
-      "address": "Riyadh, Saudi Arabia",
-      "phone": "+966-11-123-4567",
-      "email": "info@limu.edu.sa",
+      "address": "Benghazi, Libya",
+      "phone": "+218-61-123-4567",
+      "email": "hss@limu.edu.ly",
       "social": "Follow Us",
       "map": "Location on Map",
       "privacy": "Privacy Policy",
