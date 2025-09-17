@@ -21,9 +21,9 @@ const innovations = [
 ];
 
 export const InnovationSection: React.FC = () => {
-  const { t, isRTL } = useLanguage();
+  const { content, t, isRTL } = useLanguage();
   
-  const innovationData = (t('innovation.items') || []) as any[];
+  const innovationData = content.innovation?.items || [];
 
   const handleCTA = (innovation: typeof innovations[0], index: number) => {
     switch (innovation.cta_type) {

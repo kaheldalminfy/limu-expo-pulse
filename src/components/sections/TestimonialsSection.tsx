@@ -3,11 +3,11 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
-  const { t, isRTL } = useLanguage();
+  const { content, t, isRTL } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
-  const testimonials = (t('testimonials.quotes') || []) as any[];
+  const testimonials = content.testimonials?.quotes || [];
 
   useEffect(() => {
     if (!isPlaying) return;
