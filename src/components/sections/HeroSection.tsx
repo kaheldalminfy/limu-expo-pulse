@@ -85,7 +85,7 @@ export const HeroSection: React.FC = () => {
           
           <div className="max-w-4xl mx-auto text-center mb-8">
             <p className="text-lg md:text-xl text-white/95 mb-4 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              تعرّف بسرعة على برامجنا وفرص المسارات المهنية
+              بوابتك إلى مهن المستقبل
             </p>
             <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
               {isRTL ? 
