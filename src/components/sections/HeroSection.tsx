@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ChevronDown, Download, Sparkles } from 'lucide-react';
@@ -6,12 +6,51 @@ import { ChevronDown, Download, Sparkles } from 'lucide-react';
 export const HeroSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
 
+  // Background slideshow
+  const backgroundImages = [
+    '/images/bg-graduation.jpg',
+    '/images/bg-classroom.jpg',
+    '/images/bg-certificate.jpg',
+    '/images/bg-award.jpg',
+    '/images/bg-meeting1.jpg',
+    '/images/bg-meeting2.jpg'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient">
+    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+      {/* Background Slideshow */}
+      <div className="absolute inset-0 z-0">
+        {backgroundImages.map((image, index) => (
+          <div
+            key={image}
+            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-30' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url(${image})`,
+            }}
+          />
+        ))}
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-accent/50" />
+      </div>
+
       <LanguageToggle />
       
       {/* Floating LIMU Logos */}
