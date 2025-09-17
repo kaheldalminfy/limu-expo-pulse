@@ -17,7 +17,7 @@
     },
     "pdf": "/brochures/healthcare.pdf",
     "icon": "stethoscope",
-    "image": "/images/healthcare-management.jpg"
+    "image": "/images/real-healthcare-management.jpg"
   },
   {
     "slug": "business-administration",
@@ -37,7 +37,7 @@
     },
     "pdf": "/brochures/business.pdf",
     "icon": "briefcase",
-    "image": "/images/business-administration.jpg"
+    "image": "/images/real-business-administration.jpg"
   },
   {
     "slug": "finance-banking",
@@ -57,7 +57,7 @@
     },
     "pdf": "/brochures/finance.pdf",
     "icon": "banknote",
-    "image": "/images/finance-banking.jpg"
+    "image": "/images/real-finance-banking.jpg"
   },
   {
     "slug": "marketing",
