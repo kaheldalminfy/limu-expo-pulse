@@ -74,7 +74,7 @@ const ProgramDetail = () => {
 
       {/* Content Area - Ready for expansion */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/40 backdrop-blur-sm rounded-2xl">
           <div className="max-w-4xl mx-auto">
             
             {/* Program Overview */}
