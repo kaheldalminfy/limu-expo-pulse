@@ -75,6 +75,7 @@ export const HeroSection: React.FC = () => {
 
           {/* Contest Deadline Banner */}
           <div className="contest-banner max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <img src="/images/letex-logo.jpg" alt="LETEX III Logo" className="w-20 h-20 mx-auto mb-4 rounded-full" />
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-2xl">📅</span>
               <span className="text-lg font-bold">
