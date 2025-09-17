@@ -55,8 +55,12 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Cairo', 'Inter', 'system-ui', 'sans-serif'],
-        body: ['Tajawal', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Cairo', 'system-ui', 'sans-serif'],
+        body: ['Tajawal', 'system-ui', 'sans-serif'],
+      },
+      letterSpacing: {
+        tighter: '-0.025em',
+        tight: '-0.0125em',
       },
       borderRadius: {
         lg: "var(--radius)",

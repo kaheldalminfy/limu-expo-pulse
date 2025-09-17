@@ -1,5 +1,21 @@
 {
   "ar": {
+    "common": {
+      "home": "الرئيسية",
+      "back_home": "العودة للرئيسية"
+    },
+    "programs": {
+      "title": "البرامج الأكاديمية",
+      "subtitle": "اكتشف برامجنا المتميزة والمصممة لإعدادك لسوق العمل",
+      "view_all": "عرض جميع البرامج",
+      "view_details": "تفاصيل البرنامج",
+      "about_program": "نبذة عن البرنامج",
+      "core_courses": "المقررات الأساسية",
+      "career_opportunities": "فرص العمل",
+      "download_brochure": "تحميل البروشور",
+      "quick_actions": "إجراءات سريعة",
+      "back_to_programs": "العودة للبرامج"
+    },
     "hero": {
       "headline": "كلية العلوم الإنسانية والاجتماعية – بوابتك إلى مهن المستقبل",
       "subline": "تعرّف بسرعة على برامجنا وفرص المسارات المهنية",
@@ -113,6 +129,22 @@
     }
   },
   "en": {
+    "common": {
+      "home": "Home",
+      "back_home": "Back to Home"
+    },
+    "programs": {
+      "title": "Academic Programs",
+      "subtitle": "Discover our distinguished programs designed to prepare you for the job market",
+      "view_all": "View All Programs",
+      "view_details": "View Details",
+      "about_program": "About the Program",
+      "core_courses": "Core Courses",
+      "career_opportunities": "Career Opportunities",
+      "download_brochure": "Download Brochure",
+      "quick_actions": "Quick Actions",
+      "back_to_programs": "Back to Programs"
+    },
     "hero": {
       "headline": "Faculty of Humanities & Social Sciences – Your Gateway to Future Careers",
       "subline": "Quickly discover our programs and career path opportunities",
