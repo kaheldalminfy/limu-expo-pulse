@@ -2,51 +2,33 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ChevronDown, Download, Sparkles } from 'lucide-react';
-
 export const HeroSection: React.FC = () => {
-  const { t, isRTL } = useLanguage();
+  const {
+    t,
+    isRTL
+  } = useLanguage();
 
   // Background slideshow
-  const backgroundImages = [
-    '/images/bg-graduation.jpg',
-    '/images/bg-classroom.jpg',
-    '/images/bg-certificate.jpg',
-    '/images/bg-award.jpg',
-    '/images/bg-meeting1.jpg',
-    '/images/bg-meeting2.jpg'
-  ];
-
+  const backgroundImages = ['/images/bg-graduation.jpg', '/images/bg-classroom.jpg', '/images/bg-certificate.jpg', '/images/bg-award.jpg', '/images/bg-meeting1.jpg', '/images/bg-meeting2.jpg'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
-        (prevIndex + 1) % backgroundImages.length
-      );
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
     }, 5000); // Change every 5 seconds
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
-
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
       {/* Background Slideshow */}
       <div className="absolute inset-0 z-0">
-        {backgroundImages.map((image, index) => (
-          <div
-            key={image}
-            className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-30' : 'opacity-0'
-            }`}
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          />
-        ))}
+        {backgroundImages.map((image, index) => <div key={image} className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-30' : 'opacity-0'}`} style={{
+        backgroundImage: `url(${image})`
+      }} />)}
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-700/50 to-blue-400/40" />
       </div>
@@ -64,9 +46,7 @@ export const HeroSection: React.FC = () => {
           {/* Contest Badge */}
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-6 py-3 mb-8 animate-scale-in">
             <Sparkles className="w-5 h-5 text-white animate-glow" />
-            <span className="text-sm font-medium text-white">
-              {isRTL ? 'برعاية الجامعة الليبية الدولية' : 'Sponsored by Libyan International University'}
-            </span>
+            
           </div>
 
           {/* Main Contest Headline */}
@@ -77,40 +57,44 @@ export const HeroSection: React.FC = () => {
           </h1>
           
           {/* Contest Details */}
-          <div className="text-center mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="text-center mb-6 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <p className="text-lg md:text-xl text-white/90 mb-2">
               الجامعة الليبية الدولية
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto text-center mb-8">
-            <p className="text-lg md:text-xl text-white/95 mb-4 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <p className="text-lg md:text-xl text-white/95 mb-4 leading-relaxed animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               بوابتك إلى مهن المستقبل
             </p>
-            <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in" style={{
+            animationDelay: '0.5s'
+          }}>
               تعرّف بسرعة على برامجنا وفرص المسارات المهنية
             </p>
           </div>
           
           {/* Contest CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <button
-              onClick={() => scrollToSection('lead-form')}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto animate-float"
-            >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in" style={{
+          animationDelay: '0.6s'
+        }}>
+            <button onClick={() => scrollToSection('lead-form')} className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto animate-float">
               <span>سجل الان</span>
             </button>
             
-            <button
-              onClick={() => scrollToSection('programs')}
-              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
-            >
+            <button onClick={() => scrollToSection('programs')} className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
               <span>استكشاف البرامج</span>
             </button>
           </div>
 
           {/* Contest Deadline Banner */}
-          <div className="contest-banner max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="contest-banner max-w-lg mx-auto animate-fade-in" style={{
+          animationDelay: '0.8s'
+        }}>
             <img src="/images/letex-logo.jpg" alt="LETEX III Logo" className="w-20 h-20 mx-auto mb-4 rounded-full" />
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-2xl">📅</span>
@@ -124,11 +108,10 @@ export const HeroSection: React.FC = () => {
           </div>
           
           {/* Scroll Indicator */}
-          <div className="animate-bounce mt-16" style={{ animationDelay: '1.2s' }}>
-            <ChevronDown 
-              className="w-8 h-8 text-white mx-auto cursor-pointer hover:scale-110 transition-transform animate-glow" 
-              onClick={() => scrollToSection('programs')}
-            />
+          <div className="animate-bounce mt-16" style={{
+          animationDelay: '1.2s'
+        }}>
+            <ChevronDown className="w-8 h-8 text-white mx-auto cursor-pointer hover:scale-110 transition-transform animate-glow" onClick={() => scrollToSection('programs')} />
           </div>
         </div>
       </div>
@@ -136,9 +119,10 @@ export const HeroSection: React.FC = () => {
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary/20 via-primary-glow/15 to-transparent rounded-full blur-3xl animate-pulse animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gradient-to-tl from-accent/20 via-primary/10 to-transparent rounded-full blur-3xl animate-pulse animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gradient-to-tl from-accent/20 via-primary/10 to-transparent rounded-full blur-3xl animate-pulse animate-float" style={{
+        animationDelay: '2s'
+      }} />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary/5 via-primary-glow/3 to-transparent rounded-full blur-3xl animate-pulse" />
       </div>
-    </section>
-  );
+    </section>;
 };
