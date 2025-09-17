@@ -1,0 +1,228 @@
+{
+  "ar": {
+    "hero": {
+      "headline": "كلية العلوم الإنسانية والاجتماعية – بوابتك إلى مهن المستقبل",
+      "subline": "تعرّف بسرعة على برامجنا وفرص المسارات المهنية",
+      "cta_programs": "استكشاف البرامج",
+      "cta_brochure": "تحميل البروشور"
+    },
+    "programs": {
+      "title": "برامجنا الأكاديمية",
+      "subtitle": "اختر مسارك المهني من بين تخصصاتنا المتميزة",
+      "learn_more": "تعرف أكثر"
+    },
+    "map": {
+      "title": "جولة في الكلية",
+      "subtitle": "اكتشف مرافقنا الحديثة",
+      "locations": {
+        "classrooms": {
+          "name": "القاعات الدراسية",
+          "description": "قاعات مجهزة بأحدث التقنيات التعليمية"
+        },
+        "library": {
+          "name": "المكتبة",
+          "description": "مصادر تعليمية شاملة ومساحات دراسة هادئة"
+        },
+        "labs": {
+          "name": "المختبرات",
+          "description": "مختبرات حاسوب ولغات متطورة"
+        },
+        "clubs": {
+          "name": "الأندية الطلابية",
+          "description": "أنشطة متنوعة وفرص قيادية"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "آراء طلابنا",
+      "subtitle": "تجارب حقيقية من طلاب الكلية",
+      "quotes": [
+        {
+          "text": "الكلية وفرت لي الأدوات والمعرفة اللازمة لبناء مستقبل مهني ناجح",
+          "author": "سارة أحمد",
+          "program": "إدارة الأعمال"
+        },
+        {
+          "text": "التدريب العملي والأساتذة المتميزون جعلوا تجربتي الدراسية استثنائية",
+          "author": "محمد علي",
+          "program": "التمويل والمصارف"
+        },
+        {
+          "text": "بيئة تعليمية محفزة ومرافق حديثة ساعدتني على تطوير مهاراتي",
+          "author": "ليلى حسن",
+          "program": "القانون"
+        }
+      ]
+    },
+    "poll": {
+      "title": "استطلاع سريع",
+      "question": "أي برنامج جذب اهتمامك أكثر؟",
+      "vote_button": "صوّت",
+      "results": "النتائج"
+    },
+    "innovation": {
+      "title": "ركن الابتكار",
+      "subtitle": "تقنيات حديثة تدعم تعليمنا",
+      "items": [
+        {
+          "title": "الأرشيف الذكي",
+          "description": "نظام رقمي متطور لإدارة المراجع والوثائق",
+          "features": ["بحث سريع بالذكاء الاصطناعي", "وصول فوري للمصادر", "تنظيم ذكي للمحتوى"],
+          "cta": "شاهد الفيديو"
+        },
+        {
+          "title": "محكمة افتراضية",
+          "description": "تجربة واقعية لطلاب القانون باستخدام الواقع الافتراضي",
+          "features": ["محاكاة قضايا حقيقية", "تدريب تفاعلي", "بيئة محكمة واقعية"],
+          "cta": "تعرف أكثر"
+        },
+        {
+          "title": "المساعد الذكي 'ليكسي'",
+          "description": "مساعد ذكي يدعم الطلاب في رحلتهم التعليمية",
+          "features": ["إجابات فورية على الاستفسارات", "مساعدة أكاديمية مخصصة", "متاح 24/7"],
+          "cta": "جرب الآن"
+        }
+      ]
+    },
+    "stats": {
+      "programs": "7",
+      "programs_label": "برامج أكاديمية",
+      "innovations": "15",
+      "innovations_label": "مبادرة ابتكار",
+      "graduates": "2,500",
+      "graduates_label": "قصة خريج"
+    },
+    "lead_form": {
+      "title": "احصل على معلومات مفصلة",
+      "subtitle": "سنرسل لك بروشور شامل عن جميع برامجنا",
+      "name_placeholder": "الاسم الكامل",
+      "email_placeholder": "البريد الإلكتروني",
+      "program_placeholder": "اختر البرنامج المفضل",
+      "submit": "إرسال",
+      "success": "تم الإرسال بنجاح! تحقق من بريدك الإلكتروني"
+    },
+    "footer": {
+      "contact": "تواصل معنا",
+      "address": "الرياض، المملكة العربية السعودية",
+      "phone": "+966-11-123-4567",
+      "email": "info@limu.edu.sa",
+      "social": "تابعنا",
+      "map": "الموقع على الخريطة",
+      "privacy": "سياسة الخصوصية",
+      "terms": "الشروط والأحكام"
+    }
+  },
+  "en": {
+    "hero": {
+      "headline": "Faculty of Humanities & Social Sciences – Your Gateway to Future Careers",
+      "subline": "Quickly discover our programs and career path opportunities",
+      "cta_programs": "Explore Programs",
+      "cta_brochure": "Download Brochure"
+    },
+    "programs": {
+      "title": "Our Academic Programs",
+      "subtitle": "Choose your career path from our distinguished specializations",
+      "learn_more": "Learn More"
+    },
+    "map": {
+      "title": "Faculty Tour",
+      "subtitle": "Discover our modern facilities",
+      "locations": {
+        "classrooms": {
+          "name": "Classrooms",
+          "description": "Equipped with the latest educational technology"
+        },
+        "library": {
+          "name": "Library",
+          "description": "Comprehensive educational resources and quiet study spaces"
+        },
+        "labs": {
+          "name": "Laboratories",
+          "description": "Advanced computer and language labs"
+        },
+        "clubs": {
+          "name": "Student Clubs",
+          "description": "Diverse activities and leadership opportunities"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Student Voices",
+      "subtitle": "Real experiences from our students",
+      "quotes": [
+        {
+          "text": "The faculty provided me with the tools and knowledge needed to build a successful career",
+          "author": "Sarah Ahmed",
+          "program": "Business Administration"
+        },
+        {
+          "text": "Practical training and distinguished professors made my academic experience exceptional",
+          "author": "Mohammed Ali",
+          "program": "Finance and Banking"
+        },
+        {
+          "text": "Stimulating learning environment and modern facilities helped me develop my skills",
+          "author": "Layla Hassan",
+          "program": "Law"
+        }
+      ]
+    },
+    "poll": {
+      "title": "Quick Poll",
+      "question": "Which program interests you most?",
+      "vote_button": "Vote",
+      "results": "Results"
+    },
+    "innovation": {
+      "title": "Innovation Corner",
+      "subtitle": "Modern technologies supporting our education",
+      "items": [
+        {
+          "title": "Smart Archive",
+          "description": "Advanced digital system for managing references and documents",
+          "features": ["AI-powered quick search", "Instant access to resources", "Smart content organization"],
+          "cta": "Watch Video"
+        },
+        {
+          "title": "VR Moot Court",
+          "description": "Realistic experience for law students using virtual reality",
+          "features": ["Real case simulations", "Interactive training", "Realistic courtroom environment"],
+          "cta": "Learn More"
+        },
+        {
+          "title": "AI Assistant 'Lexie'",
+          "description": "Smart assistant supporting students in their educational journey",
+          "features": ["Instant answers to inquiries", "Personalized academic assistance", "Available 24/7"],
+          "cta": "Try Now"
+        }
+      ]
+    },
+    "stats": {
+      "programs": "7",
+      "programs_label": "Academic Programs",
+      "innovations": "15",
+      "innovations_label": "Innovation Initiatives",
+      "graduates": "2,500",
+      "graduates_label": "Graduate Stories"
+    },
+    "lead_form": {
+      "title": "Get Detailed Information",
+      "subtitle": "We'll send you a comprehensive brochure about all our programs",
+      "name_placeholder": "Full Name",
+      "email_placeholder": "Email Address",
+      "program_placeholder": "Choose Preferred Program",
+      "submit": "Submit",
+      "success": "Sent successfully! Check your email"
+    },
+    "footer": {
+      "contact": "Contact Us",
+      "address": "Riyadh, Saudi Arabia",
+      "phone": "+966-11-123-4567",
+      "email": "info@limu.edu.sa",
+      "social": "Follow Us",
+      "map": "Location on Map",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    }
+  }
+}

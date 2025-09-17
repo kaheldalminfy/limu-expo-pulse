@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "healthcare-management",
+    "ar": {
+      "name": "إدارة الرعاية الصحية",
+      "pitch": "قيادة منظومات الصحة بكفاءة وابتكار",
+      "about": "برنامج يؤهل الطلبة لإدارة المستشفيات والمنشآت الصحية بأحدث المعايير العالمية",
+      "core_courses": ["سياسات صحية", "إدارة خدمات طبية", "اقتصاديات صحية", "تحليل بيانات صحية", "إدارة الجودة الصحية", "أخلاقيات الرعاية الصحية"],
+      "careers": ["مدير منشأة صحية", "محلل سياسات صحية", "منسق جودة طبية", "مستشار إداري صحي"]
+    },
+    "en": {
+      "name": "Healthcare Management",
+      "pitch": "Lead healthcare systems with efficiency and innovation",
+      "about": "Prepares students to manage hospitals and healthcare facilities with the latest global standards",
+      "core_courses": ["Health Policy", "Medical Service Management", "Health Economics", "Health Data Analytics", "Healthcare Quality Management", "Healthcare Ethics"],
+      "careers": ["Healthcare Facility Manager", "Health Policy Analyst", "Medical Quality Coordinator", "Healthcare Administrative Consultant"]
+    },
+    "pdf": "/brochures/healthcare.pdf",
+    "icon": "stethoscope"
+  },
+  {
+    "slug": "business-administration",
+    "ar": {
+      "name": "إدارة الأعمال",
+      "pitch": "ريادة الأعمال في العصر الرقمي",
+      "about": "تأهيل قادة أعمال المستقبل بالمهارات الإدارية والتقنية المتطورة",
+      "core_courses": ["إدارة استراتيجية", "ريادة الأعمال", "التحليل المالي", "إدارة الموارد البشرية", "التسويق الرقمي", "إدارة العمليات"],
+      "careers": ["مدير عام", "رائد أعمال", "مستشار إداري", "محلل أعمال"]
+    },
+    "en": {
+      "name": "Business Administration",
+      "pitch": "Entrepreneurship in the digital age",
+      "about": "Prepare future business leaders with advanced managerial and technical skills",
+      "core_courses": ["Strategic Management", "Entrepreneurship", "Financial Analysis", "Human Resource Management", "Digital Marketing", "Operations Management"],
+      "careers": ["General Manager", "Entrepreneur", "Management Consultant", "Business Analyst"]
+    },
+    "pdf": "/brochures/business.pdf",
+    "icon": "briefcase"
+  },
+  {
+    "slug": "finance-banking",
+    "ar": {
+      "name": "التمويل والمصارف",
+      "pitch": "خبراء التمويل والاستثمار",
+      "about": "إعداد متخصصين في النظم المصرفية والأسواق المالية العالمية",
+      "core_courses": ["النظم المصرفية", "إدارة المخاطر", "الاستثمار والتمويل", "الأسواق المالية", "التمويل الإسلامي", "التحليل الائتماني"],
+      "careers": ["مصرفي استثماري", "محلل مالي", "مدير مخاطر", "مستشار مالي"]
+    },
+    "en": {
+      "name": "Finance and Banking",
+      "pitch": "Finance and investment experts",
+      "about": "Prepare specialists in banking systems and global financial markets",
+      "core_courses": ["Banking Systems", "Risk Management", "Investment & Finance", "Financial Markets", "Islamic Finance", "Credit Analysis"],
+      "careers": ["Investment Banker", "Financial Analyst", "Risk Manager", "Financial Advisor"]
+    },
+    "pdf": "/brochures/finance.pdf",
+    "icon": "banknote"
+  },
+  {
+    "slug": "marketing",
+    "ar": {
+      "name": "التسويق",
+      "pitch": "إبداع التسويق الرقمي والتقليدي",
+      "about": "تكوين مسوقين محترفين في عالم التجارة الإلكترونية والتسويق المتكامل",
+      "core_courses": ["التسويق الرقمي", "سلوك المستهلك", "إدارة العلامة التجارية", "تحليل السوق", "التسويق عبر وسائل التواصل", "التسويق الدولي"],
+      "careers": ["مدير تسويق", "متخصص تسويق رقمي", "محلل سوق", "مدير علامة تجارية"]
+    },
+    "en": {
+      "name": "Marketing",
+      "pitch": "Digital and traditional marketing creativity",
+      "about": "Train professional marketers in e-commerce and integrated marketing",
+      "core_courses": ["Digital Marketing", "Consumer Behavior", "Brand Management", "Market Analysis", "Social Media Marketing", "International Marketing"],
+      "careers": ["Marketing Manager", "Digital Marketing Specialist", "Market Analyst", "Brand Manager"]
+    },
+    "pdf": "/brochures/marketing.pdf",
+    "icon": "megaphone"
+  },
+  {
+    "slug": "project-management",
+    "ar": {
+      "name": "إدارة المشاريع",
+      "pitch": "قيادة المشاريع الكبرى بنجاح",
+      "about": "إعداد مديري مشاريع معتمدين دولياً بأحدث المنهجيات",
+      "core_courses": ["تخطيط المشاريع", "إدارة المخاطر", "إدارة الجودة", "إدارة الفرق", "منهجيات أجايل", "تحليل التكلفة والعائد"],
+      "careers": ["مدير مشاريع", "مستشار إدارة مشاريع", "محلل مشاريع", "منسق برامج"]
+    },
+    "en": {
+      "name": "Project Management",
+      "pitch": "Successfully lead major projects",
+      "about": "Prepare internationally certified project managers with the latest methodologies",
+      "core_courses": ["Project Planning", "Risk Management", "Quality Management", "Team Management", "Agile Methodologies", "Cost-Benefit Analysis"],
+      "careers": ["Project Manager", "Project Management Consultant", "Project Analyst", "Program Coordinator"]
+    },
+    "pdf": "/brochures/project-management.pdf",
+    "icon": "clipboard"
+  },
+  {
+    "slug": "law",
+    "ar": {
+      "name": "القانون",
+      "pitch": "خبراء القانون والعدالة",
+      "about": "تأهيل قانونيين متميزين في النظم القانونية المحلية والدولية",
+      "core_courses": ["القانون المدني", "القانون التجاري", "القانون الدولي", "القانون الجنائي", "قانون العمل", "أصول المحاكمات"],
+      "careers": ["محامي", "مستشار قانوني", "قاضي", "محكم قانوني"]
+    },
+    "en": {
+      "name": "Law",
+      "pitch": "Law and justice experts",
+      "about": "Qualify distinguished lawyers in local and international legal systems",
+      "core_courses": ["Civil Law", "Commercial Law", "International Law", "Criminal Law", "Labor Law", "Legal Procedures"],
+      "careers": ["Lawyer", "Legal Consultant", "Judge", "Legal Arbitrator"]
+    },
+    "pdf": "/brochures/law.pdf",
+    "icon": "scale"
+  },
+  {
+    "slug": "english-global-communication",
+    "ar": {
+      "name": "الإنجليزية والاتصال العالمي",
+      "pitch": "جسر التواصل مع العالم",
+      "about": "إعداد متخصصين في اللغة الإنجليزية والتواصل متعدد الثقافات",
+      "core_courses": ["الأدب الإنجليزي", "الترجمة الفورية", "التواصل متعدد الثقافات", "الكتابة الأكاديمية", "تحليل الخطاب", "التواصل الرقمي"],
+      "careers": ["مترجم", "محرر محتوى", "مسؤول علاقات دولية", "معلم لغة إنجليزية"]
+    },
+    "en": {
+      "name": "English & Global Communication",
+      "pitch": "Bridge communication with the world",
+      "about": "Prepare specialists in English language and multicultural communication",
+      "core_courses": ["English Literature", "Simultaneous Translation", "Multicultural Communication", "Academic Writing", "Discourse Analysis", "Digital Communication"],
+      "careers": ["Translator", "Content Editor", "International Relations Officer", "English Language Teacher"]
+    },
+    "pdf": "/brochures/english.pdf",
+    "icon": "globe"
+  }
+]
