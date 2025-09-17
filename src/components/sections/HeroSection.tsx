@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
             <img 
               src="/images/limu-logo-full.png" 
               alt="شعار الجامعة الليبية الدولية" 
-              className="h-8 w-auto opacity-90 animate-pulse hover:opacity-100 transition-opacity duration-300"
+              className="h-8 w-auto opacity-100"
             />
           </div>
 
