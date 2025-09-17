@@ -5,38 +5,38 @@
 /* Import Arabic-friendly fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;600;700&display=swap');
 
-/* LIMU Professional Dark Theme */
+/* LIMU Modern 2025 - Gradient Theme */
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --primary: 195 100% 50%; /* #00BFFF - Vibrant Cyan */
+    /* Brand Colors - Modern Gradient Palette */
+    --primary: 258 90% 66%; /* #6366F1 - Modern Purple */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 195 100% 60%;
-    --accent: 218 91% 60%; /* #2563EB - Deep Blue */
+    --primary-glow: 280 100% 70%; /* #A855F7 - Bright Purple */
+    --accent: 271 91% 65%; /* #8B5CF6 - Vibrant Purple */
     --accent-foreground: 0 0% 100%;
     
-    /* Professional Dark Theme Base */
-    --background: 215 84% 11%; /* #0A1A2E - Deep Navy Blue */
-    --foreground: 0 0% 94%; /* #F0F0F0 - Light Gray Text */
-    --surface: 0 0% 100%; /* #FFFFFF - White Cards */
-    --surface-foreground: 220 13% 7%; /* #111827 - Dark text on white */
-    --surface-hover: 0 0% 98%; /* #FAFAFA - Light hover */
+    /* Modern Dark Gradient Theme Base */
+    --background: 222 84% 5%; /* #0F172A - Deep Space Navy */
+    --foreground: 0 0% 98%; /* #FAFAFA - Pure White Text */
+    --surface: 220 13% 18%; /* #1E293B - Modern Card Surface */
+    --surface-foreground: 0 0% 98%; /* #FAFAFA - Light text on surface */
+    --surface-hover: 220 13% 22%; /* #334155 - Hover surface */
     
     /* Semantic Colors */
-    --card: 0 0% 100%; /* #FFFFFF - White cards */
-    --card-foreground: 220 13% 7%; /* #111827 - Dark text */
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 7%;
-    --secondary: 220 14% 96%; /* #F1F5F9 - Light secondary */
-    --secondary-foreground: 220 13% 7%;
-    --muted: 220 14% 96%; /* #F3F4F6 - Light muted bg */
-    --muted-foreground: 220 9% 46%;
+    --card: 220 13% 18%; /* #1E293B - Dark cards */
+    --card-foreground: 0 0% 98%; /* #FAFAFA - Light text */
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 98%;
+    --secondary: 220 13% 14%; /* #0F172A - Secondary dark */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 25% 27%; /* #475569 - Muted slate */
+    --muted-foreground: 215 20% 65%; /* #94A3B8 - Muted text */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 91%; /* #E5E7EB - Light border */
-    --input: 0 0% 100%;
-    --ring: 195 100% 50%;
+    --border: 215 25% 27%; /* #475569 - Subtle borders */
+    --input: 220 13% 18%;
+    --ring: 258 90% 66%;
     
     /* Design System Extensions */
     --radius: 1rem;
@@ -93,25 +93,77 @@
 }
 
 @layer components {
-  /* Hero Gradient Background */
+  /* Modern 2025 Gradient Backgrounds */
   .hero-gradient {
     background: linear-gradient(135deg, 
       hsl(var(--background)) 0%, 
-      hsl(215 84% 13%) 50%, 
-      hsl(var(--background)) 100%
+      hsl(258 90% 15%) 30%,
+      hsl(271 91% 20%) 60%,
+      hsl(280 100% 25%) 100%
     );
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Clean Minimalist Cards */
+  .hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 50%, hsl(258 90% 66% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(280 100% 70% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(271 91% 65% / 0.2) 0%, transparent 50%);
+    animation: gradientShift 8s ease-in-out infinite alternate;
+  }
+
+  .animated-bg {
+    background: linear-gradient(270deg, 
+      hsl(var(--background)),
+      hsl(258 90% 8%),
+      hsl(271 91% 10%),
+      hsl(280 100% 12%)
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+  }
+
+  /* Modern Glass Cards */
   .program-card {
-    @apply bg-surface border border-border rounded-2xl p-6 cursor-pointer;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: var(--transition-smooth);
+    @apply bg-surface/80 backdrop-blur-md border border-border/50 rounded-3xl p-6 cursor-pointer relative overflow-hidden;
+    box-shadow: 
+      0 8px 32px rgba(99, 102, 241, 0.1),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .program-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.1), 
+      transparent
+    );
+    transition: left 0.6s;
+  }
+
+  .program-card:hover::before {
+    left: 100%;
   }
 
   .program-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    transform: translateY(-2px);
+    box-shadow: 
+      0 20px 60px rgba(99, 102, 241, 0.2),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    transform: translateY(-8px) scale(1.02);
+    border-color: hsl(var(--primary) / 0.3);
   }
 
   /* Interactive Elements */
@@ -127,22 +179,53 @@
     transform: scale(0.98);
   }
 
-  /* Button Variants */
+  /* Modern 2025 Button Variants */
   .btn-hero {
-    @apply bg-primary text-primary-foreground font-semibold px-8 py-4 rounded-xl;
-    @apply hover:bg-primary/90 active:scale-95;
-    transition: var(--transition-smooth);
+    @apply font-semibold px-8 py-4 rounded-2xl relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 
+      0 4px 15px hsl(var(--primary) / 0.4),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.2), 
+      transparent
+    );
+    transition: left 0.6s;
+  }
+
+  .btn-hero:hover::before {
+    left: 100%;
+  }
+
+  .btn-hero:hover {
+    box-shadow: 
+      0 8px 25px hsl(var(--primary) / 0.5),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    transform: translateY(-2px) scale(1.02);
   }
 
   .btn-secondary {
-    @apply bg-secondary border border-border text-secondary-foreground font-medium px-6 py-3 rounded-lg;
-    @apply hover:bg-muted active:scale-95;
+    @apply bg-surface/80 backdrop-blur-md border border-border/50 text-surface-foreground font-medium px-6 py-3 rounded-xl;
+    @apply hover:bg-surface-hover/80 active:scale-95;
     transition: var(--transition-smooth);
   }
 
   .btn-accent {
-    @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg;
-    @apply hover:bg-primary/90 active:scale-95;
+    @apply font-semibold px-6 py-3 rounded-xl relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary-glow)));
+    color: hsl(var(--accent-foreground));
     transition: var(--transition-smooth);
   }
 
@@ -151,10 +234,20 @@
     @apply font-display text-3xl font-bold text-primary;
   }
 
-  /* Testimonial Cards */
+  /* Modern Glass Testimonial Cards */
   .testimonial-card {
-    @apply bg-surface border border-border rounded-2xl p-6 text-center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    @apply bg-surface/80 backdrop-blur-md border border-border/50 rounded-3xl p-6 text-center relative;
+    box-shadow: 
+      0 8px 32px rgba(99, 102, 241, 0.08),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 16px 48px rgba(99, 102, 241, 0.12),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
   }
 
   /* Poll Bar Animation */
@@ -163,17 +256,24 @@
     transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Innovation Cards */
+  /* Modern Innovation Cards */
   .innovation-card {
-    @apply bg-surface border border-border rounded-2xl p-6 cursor-pointer;
-    background: linear-gradient(135deg, hsl(var(--surface)) 0%, hsl(var(--surface-hover)) 100%);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: var(--transition-smooth);
+    @apply bg-surface/80 backdrop-blur-md border border-border/50 rounded-3xl p-6 cursor-pointer relative overflow-hidden;
+    background: linear-gradient(135deg, 
+      hsl(var(--surface) / 0.8) 0%, 
+      hsl(var(--surface-hover) / 0.8) 100%
+    );
+    box-shadow: 
+      0 8px 32px rgba(99, 102, 241, 0.1),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .innovation-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    transform: translateY(-2px);
+    box-shadow: 
+      0 20px 60px rgba(99, 102, 241, 0.15),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    transform: translateY(-8px) rotateY(5deg);
   }
 
   /* Map Hotspots */
@@ -209,28 +309,36 @@
 }
 
 @layer utilities {
-  /* Custom Animations */
+  /* Modern 2025 Animations */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.8s ease-out forwards;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out forwards;
+    animation: slideUp 0.8s ease-out forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.4s ease-out forwards;
+    animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-counter {
-    animation: countUp 2s ease-out forwards;
+    animation: countUp 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
-  /* Animation Keyframes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  /* Modern Animation Keyframes */
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -241,33 +349,108 @@
   @keyframes slideUp {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(50px) scale(0.95);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
     }
   }
 
   @keyframes scaleIn {
     from {
       opacity: 0;
-      transform: scale(0.9);
+      transform: scale(0.8) rotate(-5deg);
     }
     to {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1) rotate(0deg);
     }
   }
 
   @keyframes countUp {
     from {
-      transform: scale(0.8);
+      transform: scale(0.7);
       opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
     }
     to {
       transform: scale(1);
       opacity: 1;
     }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.2);
+    }
+    to {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.4);
+    }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Floating Elements */
+  .floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsl(var(--primary) / 0.3), transparent);
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .floating-orb-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .floating-orb-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation-delay: 2s;
+  }
+
+  .floating-orb-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
   }
 }

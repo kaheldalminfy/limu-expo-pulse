@@ -98,7 +98,7 @@ const Index = () => {
   }, [language, isRTL]);
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen animated-bg text-foreground relative overflow-hidden">
       {/* Skip to main content link for accessibility */}
       <a 
         href="#main-content" 
@@ -111,9 +111,15 @@ const Index = () => {
       <HeroSection />
 
       {/* Main Content */}
-      <div id="main-content">
+      <div id="main-content" className="relative z-10">
         {/* Programs Section */}
-        <ProgramsSection />
+        <div className="relative">
+          <ProgramsSection />
+          {/* Floating background elements */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div className="absolute top-20 right-20 w-40 h-40 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl animate-float" />
+          </div>
+        </div>
 
         {/* Interactive Map Section */}
         <MapSection />
@@ -125,7 +131,11 @@ const Index = () => {
         <PollSection />
 
         {/* Innovation Corner */}
-        <InnovationSection />
+        <div className="relative">
+          <InnovationSection />
+          {/* More floating elements */}
+          <div className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-tl from-accent/10 to-transparent rounded-full blur-2xl animate-float" style={{ animationDelay: '3s' }} />
+        </div>
 
         {/* Stats Section */}
         <StatsSection />
