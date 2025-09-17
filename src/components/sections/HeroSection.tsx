@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
           />
         ))}
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-accent/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-700/50 to-blue-400/40" />
       </div>
 
       <LanguageToggle />
