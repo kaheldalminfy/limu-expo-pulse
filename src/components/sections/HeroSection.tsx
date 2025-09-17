@@ -15,10 +15,10 @@ export const HeroSection: React.FC = () => {
       <LanguageToggle />
       
       {/* Floating LIMU Logos */}
-      <img src="/images/limu-logo-1.png" alt="LIMU Logo" className="floating-logo floating-logo-1" />
-      <img src="/images/limu-logo-2.png" alt="LIMU Logo" className="floating-logo floating-logo-2" />
-      <img src="/images/limu-logo-1.png" alt="LIMU Logo" className="floating-logo floating-logo-3" />
-      <img src="/images/limu-logo-2.png" alt="LIMU Logo" className="floating-logo floating-logo-4" />
+      <img src="/images/limu-main-logo.png" alt="LIMU Logo" className="floating-logo floating-logo-1" />
+      <img src="/images/limu-main-logo.png" alt="LIMU Logo" className="floating-logo floating-logo-2" />
+      <img src="/images/limu-main-logo.png" alt="LIMU Logo" className="floating-logo floating-logo-3" />
+      <img src="/images/limu-main-logo.png" alt="LIMU Logo" className="floating-logo floating-logo-4" />
       
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
