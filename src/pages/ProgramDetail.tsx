@@ -129,26 +129,87 @@ const ProgramDetail = () => {
                   {isRTL ? 'ألبوم الفيديوهات' : 'Video Gallery'}
                 </h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[1, 2, 3].map((index) => (
-                  <div key={index} className="group relative bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                    <div className="aspect-video bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-                        </svg>
-                      </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Video 1 - عبد الرحمن العربي */}
+                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-video">
+                    <iframe 
+                      src="https://www.youtube.com/embed/ADB8E2TMi9o"
+                      title="تجربة الطالب عبد الرحمن العربي في برنامج إدارة الرعاية الصحية"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
+                      تجربة الطالب عبد الرحمن العربي
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      يشارك طالبنا عبد الرحمن العربي رؤى من رحلتهم في برنامج إدارة الرعاية الصحية في الجامعة الطبية الليبية الدولية. يفكرون في كيفية تزويدهم البرنامج بالمهارات الأساسية في إدارة الرعاية الصحية، ومزج المعرفة النظرية مع الخبرات العملية، مثل التدريب الداخلي والمشاريع الصناعية.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Video 2 - Zaho */}
+                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-video">
+                    <iframe 
+                      src="https://www.youtube.com/embed/pJiOjikohy8"
+                      title="تجربة الطالبة Zaho في برنامج إدارة الرعاية الصحية"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
+                      تجربة الطالبة Zaho
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      تؤكد طالبتنا Zaho على بيئة التعلم الداعمة وفرصة التفاعل مع أعضاء هيئة التدريس ذوي الخبرة، مما أثرى فهمها لمشهد الرعاية الصحية. لم تعدها خبرتها لمواجهة تحديات الصناعة فحسب، بل ألهمتها أيضاً لتصبح رائدة قادرة على إحداث تغيير إيجابي في إدارة الرعاية الصحية.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Video 3 - د. ابتسام ماضي */}
+                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 lg:col-span-2">
+                  <div className="flex flex-col lg:flex-row">
+                    <div className="lg:w-1/2 aspect-video lg:aspect-auto">
+                      <iframe 
+                        src="https://www.youtube.com/embed/tbGCTDEJuEw"
+                        title="د. ابتسام ماضي - رئيس برنامج إدارة الرعاية الصحية"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className="w-full h-full"
+                      />
                     </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold text-card-foreground mb-2">
-                        {isRTL ? `فيديو تعريفي ${index}` : `Introduction Video ${index}`}
+                    <div className="lg:w-1/2 p-6 flex flex-col justify-center">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                          </svg>
+                        </div>
+                        <span className="text-xs bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full font-medium">
+                          رئيس البرنامج
+                        </span>
+                      </div>
+                      <h4 className="font-semibold text-card-foreground mb-3 text-xl">
+                        د. ابتسام ماضي
                       </h4>
-                      <p className="text-sm text-muted-foreground">
-                        {isRTL ? 'وصف مختصر للفيديو' : 'Brief video description'}
+                      <p className="text-muted-foreground mb-4">
+                        رئيس برنامج إدارة الرعاية الصحية
+                      </p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        تتحدث الدكتورة ابتسام ماضي عن رؤية وأهداف برنامج إدارة الرعاية الصحية، والمنهجية التعليمية المتطورة المتبعة لإعداد جيل من المختصين القادرين على إدارة وتطوير أنظمة الرعاية الصحية.
                       </p>
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
 
