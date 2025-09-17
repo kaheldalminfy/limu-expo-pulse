@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
               onClick={() => scrollToSection('programs')}
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
-              <span>{isRTL ? 'شاهد الأعمال السابقة' : 'View Previous Works'}</span>
+              <span>استكشاف البرامج</span>
             </button>
           </div>
 
