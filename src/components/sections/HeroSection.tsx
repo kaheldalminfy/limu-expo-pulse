@@ -88,10 +88,7 @@ export const HeroSection: React.FC = () => {
               بوابتك إلى مهن المستقبل
             </p>
             <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              {isRTL ? 
-                'دع طفلك يرسم ما يحب في مدينته أو يتخيله في المستقبل: شارع، حديقة، ناس، أو أي مشهد يحبه' : 
-                'Let your child draw what they love about their city or imagine in the future: street, park, people, or any scene they love'
-              }
+              تعرّف بسرعة على برامجنا وفرص المسارات المهنية
             </p>
           </div>
           
