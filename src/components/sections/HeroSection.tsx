@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
           {/* Contest Details */}
           <div className="text-center mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <p className="text-lg md:text-xl text-white/90 mb-2">
-              {isRTL ? '🎨 ✨ هل طفلك يحب الرسم؟ ✨ 🎨' : '🎨 ✨ Does your child love drawing? ✨ 🎨'}
+              بوابتك إلى مهن المستقبل
             </p>
           </div>
           
