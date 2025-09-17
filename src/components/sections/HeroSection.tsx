@@ -62,7 +62,7 @@ export const HeroSection: React.FC = () => {
               onClick={() => scrollToSection('lead-form')}
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto animate-float"
             >
-              <span>{isRTL ? 'شارك الآن' : 'Participate Now'}</span>
+              <span>سجل الان</span>
             </button>
             
             <button
