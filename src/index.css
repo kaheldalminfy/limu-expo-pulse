@@ -5,38 +5,38 @@
 /* Import Arabic-friendly fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;600;700&display=swap');
 
-/* LIMU Exhibition Design System - Dark theme with brand colors */
+/* LIMU Professional Dark Theme */
 
 @layer base {
   :root {
     /* Brand Colors */
-    --primary: 198 93% 60%; /* #0EA5E9 - LIMU Blue */
+    --primary: 195 100% 50%; /* #00BFFF - Vibrant Cyan */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 198 93% 70%;
-    --accent: 142 76% 47%; /* #22C55E - Success Green */
+    --primary-glow: 195 100% 60%;
+    --accent: 218 91% 60%; /* #2563EB - Deep Blue */
     --accent-foreground: 0 0% 100%;
     
-    /* Dark Theme Base */
-    --background: 222 47% 7%; /* #0B1220 - Deep navy */
-    --foreground: 220 13% 91%; /* #E5E7EB - Light text */
-    --surface: 220 39% 11%; /* #101826 - Card surface */
-    --surface-foreground: 220 13% 91%;
-    --surface-hover: 220 39% 15%;
+    /* Professional Dark Theme Base */
+    --background: 215 84% 11%; /* #0A1A2E - Deep Navy Blue */
+    --foreground: 0 0% 94%; /* #F0F0F0 - Light Gray Text */
+    --surface: 0 0% 100%; /* #FFFFFF - White Cards */
+    --surface-foreground: 220 13% 7%; /* #111827 - Dark text on white */
+    --surface-hover: 0 0% 98%; /* #FAFAFA - Light hover */
     
     /* Semantic Colors */
-    --card: 220 39% 11%;
-    --card-foreground: 220 13% 91%;
-    --popover: 220 39% 11%;
-    --popover-foreground: 220 13% 91%;
-    --secondary: 220 39% 15%;
-    --secondary-foreground: 220 13% 91%;
-    --muted: 220 13% 25%;
+    --card: 0 0% 100%; /* #FFFFFF - White cards */
+    --card-foreground: 220 13% 7%; /* #111827 - Dark text */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 7%;
+    --secondary: 220 14% 96%; /* #F1F5F9 - Light secondary */
+    --secondary-foreground: 220 13% 7%;
+    --muted: 220 14% 96%; /* #F3F4F6 - Light muted bg */
     --muted-foreground: 220 9% 46%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 25%;
-    --input: 220 39% 15%;
-    --ring: 198 93% 60%;
+    --border: 220 13% 91%; /* #E5E7EB - Light border */
+    --input: 0 0% 100%;
+    --ring: 195 100% 50%;
     
     /* Design System Extensions */
     --radius: 1rem;
@@ -97,21 +97,20 @@
   .hero-gradient {
     background: linear-gradient(135deg, 
       hsl(var(--background)) 0%, 
-      hsl(222 47% 9%) 50%, 
+      hsl(215 84% 13%) 50%, 
       hsl(var(--background)) 100%
     );
   }
 
-  /* Glass Effect Cards */
-  .glass-card {
-    @apply bg-surface/80 backdrop-blur-sm border border-border/50 rounded-2xl;
-    box-shadow: var(--shadow-soft);
+  /* Clean Minimalist Cards */
+  .program-card {
+    @apply bg-surface border border-border rounded-2xl p-6 cursor-pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: var(--transition-smooth);
   }
 
-  .glass-card:hover {
-    @apply bg-surface-hover/80;
-    box-shadow: var(--shadow-lift);
+  .program-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     transform: translateY(-2px);
   }
 
@@ -130,20 +129,20 @@
 
   /* Button Variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold px-8 py-4 rounded-xl;
-    @apply hover:shadow-lg hover:shadow-primary/25 active:scale-95;
+    @apply bg-primary text-primary-foreground font-semibold px-8 py-4 rounded-xl;
+    @apply hover:bg-primary/90 active:scale-95;
     transition: var(--transition-smooth);
   }
 
   .btn-secondary {
-    @apply bg-surface border border-border text-surface-foreground font-medium px-6 py-3 rounded-lg;
-    @apply hover:bg-surface-hover hover:border-primary/50 active:scale-95;
+    @apply bg-secondary border border-border text-secondary-foreground font-medium px-6 py-3 rounded-lg;
+    @apply hover:bg-muted active:scale-95;
     transition: var(--transition-smooth);
   }
 
   .btn-accent {
-    @apply bg-accent text-accent-foreground font-semibold px-6 py-3 rounded-lg;
-    @apply hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 active:scale-95;
+    @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg;
+    @apply hover:bg-primary/90 active:scale-95;
     transition: var(--transition-smooth);
   }
 
@@ -152,23 +151,10 @@
     @apply font-display text-3xl font-bold text-primary;
   }
 
-  /* Program Cards */
-  .program-card {
-    @apply glass-card p-6 cursor-pointer interactive-scale;
-  }
-
-  .program-card:hover .program-icon {
-    @apply text-primary;
-    transform: scale(1.1);
-  }
-
-  .program-icon {
-    transition: var(--transition-smooth);
-  }
-
   /* Testimonial Cards */
   .testimonial-card {
-    @apply glass-card p-6 text-center;
+    @apply bg-surface border border-border rounded-2xl p-6 text-center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   /* Poll Bar Animation */
@@ -179,8 +165,15 @@
 
   /* Innovation Cards */
   .innovation-card {
-    @apply glass-card p-6 interactive-scale;
+    @apply bg-surface border border-border rounded-2xl p-6 cursor-pointer;
     background: linear-gradient(135deg, hsl(var(--surface)) 0%, hsl(var(--surface-hover)) 100%);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: var(--transition-smooth);
+  }
+
+  .innovation-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
   }
 
   /* Map Hotspots */
