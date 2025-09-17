@@ -9,34 +9,34 @@
 
 @layer base {
   :root {
-    /* LIMU Brand Colors - University Blue Theme */
-    --primary: 207 90% 54%; /* #1976D2 - LIMU University Blue */
+    /* Brand Colors - Modern Gradient Palette */
+    --primary: 258 90% 66%; /* #6366F1 - Modern Purple */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 207 100% 65%; /* #42A5F5 - Light Blue */
-    --accent: 207 100% 50%; /* #2196F3 - Bright Blue */
+    --primary-glow: 280 100% 70%; /* #A855F7 - Bright Purple */
+    --accent: 271 91% 65%; /* #8B5CF6 - Vibrant Purple */
     --accent-foreground: 0 0% 100%;
     
-    /* LIMU Professional Theme Base */
-    --background: 0 0% 100%; /* #FFFFFF - Clean White Background */
-    --foreground: 210 17% 15%; /* #1E293B - Professional Dark Text */
-    --surface: 0 0% 98%; /* #FAFAFA - Light Card Surface */
-    --surface-foreground: 210 17% 15%; /* #1E293B - Dark text on surface */
-    --surface-hover: 220 14% 96%; /* #F1F5F9 - Subtle hover surface */
+    /* Modern Dark Gradient Theme Base */
+    --background: 222 84% 5%; /* #0F172A - Deep Space Navy */
+    --foreground: 0 0% 98%; /* #FAFAFA - Pure White Text */
+    --surface: 220 13% 18%; /* #1E293B - Modern Card Surface */
+    --surface-foreground: 0 0% 98%; /* #FAFAFA - Light text on surface */
+    --surface-hover: 220 13% 22%; /* #334155 - Hover surface */
     
-    /* Semantic Colors - Clean & Professional */
-    --card: 0 0% 100%; /* #FFFFFF - White cards */
-    --card-foreground: 210 17% 15%; /* #1E293B - Dark text */
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 17% 15%;
-    --secondary: 220 14% 96%; /* #F1F5F9 - Light secondary */
-    --secondary-foreground: 210 17% 15%;
-    --muted: 220 9% 46%; /* #64748B - Professional muted */
-    --muted-foreground: 220 9% 46%; /* #64748B - Muted text */
+    /* Semantic Colors */
+    --card: 220 13% 18%; /* #1E293B - Dark cards */
+    --card-foreground: 0 0% 98%; /* #FAFAFA - Light text */
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 98%;
+    --secondary: 220 13% 14%; /* #0F172A - Secondary dark */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 25% 27%; /* #475569 - Muted slate */
+    --muted-foreground: 215 20% 65%; /* #94A3B8 - Muted text */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 91%; /* #E2E8F0 - Light borders */
-    --input: 0 0% 100%;
-    --ring: 207 90% 54%;
+    --border: 215 25% 27%; /* #475569 - Subtle borders */
+    --input: 220 13% 18%;
+    --ring: 258 90% 66%;
     
     /* Design System Extensions */
     --radius: 1rem;
@@ -97,9 +97,9 @@
   .hero-gradient {
     background: linear-gradient(135deg, 
       hsl(var(--background)) 0%, 
-      hsl(207 90% 96%) 30%,
-      hsl(207 90% 98%) 60%,
-      hsl(var(--background)) 100%
+      hsl(258 90% 15%) 30%,
+      hsl(271 91% 20%) 60%,
+      hsl(280 100% 25%) 100%
     );
     position: relative;
     overflow: hidden;
@@ -113,29 +113,30 @@
     right: 0;
     bottom: 0;
     background: 
-      radial-gradient(circle at 20% 50%, hsl(207 90% 54% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(207 100% 65% / 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(258 90% 66% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(280 100% 70% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(271 91% 65% / 0.2) 0%, transparent 50%);
     animation: gradientShift 8s ease-in-out infinite alternate;
   }
 
   .animated-bg {
     background: linear-gradient(270deg, 
       hsl(var(--background)),
-      hsl(207 90% 96%),
-      hsl(207 100% 98%),
-      hsl(var(--background))
+      hsl(258 90% 8%),
+      hsl(271 91% 10%),
+      hsl(280 100% 12%)
     );
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;
   }
 
-  /* LIMU Modern Glass Cards */
+  /* Modern Glass Cards */
   .program-card {
-    @apply bg-card border border-border rounded-2xl p-6 cursor-pointer relative overflow-hidden;
+    @apply bg-surface/80 backdrop-blur-md border border-border/50 rounded-3xl p-6 cursor-pointer relative overflow-hidden;
     box-shadow: 
-      0 4px 16px rgba(25, 118, 210, 0.08),
-      0 1px 2px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      0 8px 32px rgba(99, 102, 241, 0.1),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .program-card::before {
@@ -159,10 +160,10 @@
 
   .program-card:hover {
     box-shadow: 
-      0 8px 32px rgba(25, 118, 210, 0.15),
-      0 2px 4px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-    border-color: hsl(var(--primary) / 0.2);
+      0 20px 60px rgba(99, 102, 241, 0.2),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    transform: translateY(-8px) scale(1.02);
+    border-color: hsl(var(--primary) / 0.3);
   }
 
   /* Interactive Elements */
@@ -178,14 +179,14 @@
     transform: scale(0.98);
   }
 
-  /* LIMU Professional Button Variants */
+  /* Modern 2025 Button Variants */
   .btn-hero {
-    @apply font-semibold px-8 py-4 rounded-xl relative overflow-hidden;
+    @apply font-semibold px-8 py-4 rounded-2xl relative overflow-hidden;
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     color: hsl(var(--primary-foreground));
     box-shadow: 
-      0 4px 15px hsl(var(--primary) / 0.25),
-      0 1px 2px rgba(0, 0, 0, 0.05);
+      0 4px 15px hsl(var(--primary) / 0.4),
+      0 1px 1px rgba(255, 255, 255, 0.1) inset;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -210,9 +211,9 @@
 
   .btn-hero:hover {
     box-shadow: 
-      0 8px 25px hsl(var(--primary) / 0.35),
-      0 2px 4px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
+      0 8px 25px hsl(var(--primary) / 0.5),
+      0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    transform: translateY(-2px) scale(1.02);
   }
 
   .btn-secondary {

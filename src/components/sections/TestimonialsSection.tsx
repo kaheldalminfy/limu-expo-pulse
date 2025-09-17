@@ -62,19 +62,14 @@ export const TestimonialsSection: React.FC = () => {
                   </span>
                 </div>
                 
-                  <div className="text-center">
-                    <div className="font-semibold text-foreground">
-                      {testimonials[currentIndex]?.author}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {testimonials[currentIndex]?.program}
-                    </div>
-                    {testimonials[currentIndex]?.position && (
-                      <div className="text-xs text-primary mt-1">
-                        {testimonials[currentIndex]?.position}
-                      </div>
-                    )}
+                <div className="text-center">
+                  <div className="font-semibold text-foreground">
+                    {testimonials[currentIndex]?.author}
                   </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonials[currentIndex]?.program}
+                  </div>
+                </div>
               </div>
             </div>
 

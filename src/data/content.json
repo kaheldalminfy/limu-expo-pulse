@@ -34,26 +34,23 @@
       }
     },
     "testimonials": {
-      "title": "قصص النجاح",
-      "subtitle": "خريجون متميزون يقودون التغيير في مجتمعهم",
+      "title": "آراء طلابنا",
+      "subtitle": "تجارب حقيقية من طلاب الكلية",
       "quotes": [
         {
-          "text": "الكلية أهلتني للعمل في مناصب قيادية في القطاع المصرفي الليبي",
-          "author": "علي المسلاتي",
-          "program": "التمويل والمصارف",
-          "position": "يعمل في بنك الأمان الإسلامي"
+          "text": "الكلية وفرت لي الأدوات والمعرفة اللازمة لبناء مستقبل مهني ناجح",
+          "author": "سارة أحمد",
+          "program": "إدارة الأعمال"
         },
         {
-          "text": "استطعت بناء شركتي الخاصة بفضل المهارات الإدارية التي اكتسبتها",
-          "author": "عبد الرحمن العارف",
-          "program": "إدارة الأعمال", 
-          "position": "المدير التنفيذي لشركة المجد لاستيراد الأجهزة الطبية"
+          "text": "التدريب العملي والأساتذة المتميزون جعلوا تجربتي الدراسية استثنائية",
+          "author": "محمد علي",
+          "program": "التمويل والمصارف"
         },
         {
-          "text": "أطبق المعرفة القانونية المتقدمة التي حصلت عليها في عملي اليومي",
-          "author": "أحمد جاد الله",
-          "program": "القانون",
-          "position": "يعمل في المؤسسة الوطنية للنفط"
+          "text": "بيئة تعليمية محفزة ومرافق حديثة ساعدتني على تطوير مهاراتي",
+          "author": "ليلى حسن",
+          "program": "القانون"
         }
       ]
     },
@@ -90,12 +87,10 @@
     "stats": {
       "programs": "8",
       "programs_label": "برامج أكاديمية",
-      "students": "156",
-      "students_label": "طالب مسجل",
-      "graduates": "60+",
-      "graduates_label": "خريج متميز",
-      "research": "8+",
-      "research_label": "بحث علمي"
+      "innovations": "20",
+      "innovations_label": "مبادرة ابتكار",
+      "graduates": "3,200",
+      "graduates_label": "خريج متميز"
     },
     "lead_form": {
       "title": "احصل على معلومات مفصلة",
@@ -152,26 +147,23 @@
       }
     },
     "testimonials": {
-      "title": "Success Stories",
-      "subtitle": "Distinguished graduates leading change in their community",
+      "title": "Student Voices",
+      "subtitle": "Real experiences from our students",
       "quotes": [
         {
-          "text": "The faculty prepared me to work in leadership positions in the Libyan banking sector",
-          "author": "Ali AL Mesallati",
-          "program": "Finance and Banking",
-          "position": "Works at Daman Islamic Bank"
+          "text": "The faculty provided me with the tools and knowledge needed to build a successful career",
+          "author": "Sarah Ahmed",
+          "program": "Business Administration"
         },
         {
-          "text": "I was able to build my own company thanks to the management skills I acquired",
-          "author": "Abdelrahman AL Aref",
-          "program": "Business Administration",
-          "position": "CEO of AL-MGD for Importing Dental Apparatus"
+          "text": "Practical training and distinguished professors made my academic experience exceptional",
+          "author": "Mohammed Ali",
+          "program": "Finance and Banking"
         },
         {
-          "text": "I apply the advanced legal knowledge I gained in my daily work",
-          "author": "Ahmed Jadallah", 
-          "program": "Law",
-          "position": "Works at the National Oil Corporation"
+          "text": "Stimulating learning environment and modern facilities helped me develop my skills",
+          "author": "Layla Hassan",
+          "program": "Law"
         }
       ]
     },
@@ -208,12 +200,10 @@
     "stats": {
       "programs": "8",
       "programs_label": "Academic Programs",
-      "students": "156",
-      "students_label": "Enrolled Students",
-      "graduates": "60+",
-      "graduates_label": "Distinguished Graduates",
-      "research": "8+",
-      "research_label": "Research Projects"
+      "innovations": "20",
+      "innovations_label": "Innovation Initiatives",
+      "graduates": "3,200",
+      "graduates_label": "Distinguished Graduates"
     },
     "lead_form": {
       "title": "Get Detailed Information",

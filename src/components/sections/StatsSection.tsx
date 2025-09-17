@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
-import { GraduationCap, Users, Award, BookOpen, TrendingUp } from 'lucide-react';
+import { TrendingUp, Users, Award } from 'lucide-react';
 
 interface CounterProps {
   end: number;
@@ -78,33 +78,27 @@ export const StatsSection: React.FC = () => {
     {
       value: parseInt(t('stats.programs')),
       label: t('stats.programs_label'),
-      icon: BookOpen,
+      icon: Award,
       color: 'text-primary'
     },
     {
-      value: parseInt(t('stats.students')),
-      label: t('stats.students_label'),
-      icon: Users,
+      value: parseInt(t('stats.innovations')),
+      label: t('stats.innovations_label'),
+      icon: TrendingUp,
       color: 'text-accent'
     },
     {
       value: parseInt(t('stats.graduates').replace(/[^\d]/g, '')),
       label: t('stats.graduates_label'),
-      icon: GraduationCap,
+      icon: Users,
       color: 'text-primary'
-    },
-    {
-      value: parseInt(t('stats.research').replace(/[^\d]/g, '')),
-      label: t('stats.research_label'),
-      icon: Award,
-      color: 'text-accent'
     }
   ];
 
   return (
     <section className="py-20 bg-surface/30">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             
