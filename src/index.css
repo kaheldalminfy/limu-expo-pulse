@@ -9,29 +9,42 @@
 
 @layer base {
   :root {
-    --background: 255 255 255;
-    --foreground: 17 24 39;
-    --card: 255 255 255;
-    --card-foreground: 17 24 39;
-    --popover: 255 255 255;
-    --popover-foreground: 17 24 39;
-    --primary: 14 165 233;
-    --primary-foreground: 255 255 255;
-    --secondary: 37 99 235;
-    --secondary-foreground: 255 255 255;
-    --muted: 243 244 246;
-    --muted-foreground: 107 114 128;
-    --accent: 37 99 235;
-    --accent-foreground: 255 255 255;
-    --destructive: 239 68 68;
-    --destructive-foreground: 248 250 252;
-    --border: 229 231 235;
-    --input: 229 231 235;
-    --ring: 14 165 233;
-    --surface: 255 255 255;
-    --surface-foreground: 17 24 39;
-    --surface-hover: 249 250 251;
-    --radius: 0.75rem;
+    /* Brand Colors */
+    --primary: 198 93% 60%; /* #0EA5E9 - LIMU Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 198 93% 70%;
+    --accent: 142 76% 47%; /* #22C55E - Success Green */
+    --accent-foreground: 0 0% 100%;
+    
+    /* Dark Theme Base */
+    --background: 222 47% 7%; /* #0B1220 - Deep navy */
+    --foreground: 220 13% 91%; /* #E5E7EB - Light text */
+    --surface: 220 39% 11%; /* #101826 - Card surface */
+    --surface-foreground: 220 13% 91%;
+    --surface-hover: 220 39% 15%;
+    
+    /* Semantic Colors */
+    --card: 220 39% 11%;
+    --card-foreground: 220 13% 91%;
+    --popover: 220 39% 11%;
+    --popover-foreground: 220 13% 91%;
+    --secondary: 220 39% 15%;
+    --secondary-foreground: 220 13% 91%;
+    --muted: 220 13% 25%;
+    --muted-foreground: 220 9% 46%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 25%;
+    --input: 220 39% 15%;
+    --ring: 198 93% 60%;
+    
+    /* Design System Extensions */
+    --radius: 1rem;
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-surface: linear-gradient(135deg, hsl(var(--surface)), hsl(var(--surface-hover)));
+    --shadow-soft: 0 4px 6px -1px hsl(222 47% 7% / 0.3), 0 2px 4px -1px hsl(222 47% 7% / 0.06);
+    --shadow-lift: 0 10px 25px -3px hsl(222 47% 7% / 0.4), 0 4px 6px -2px hsl(222 47% 7% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
