@@ -33,7 +33,7 @@ export const HeroSection: React.FC = () => {
           {/* Main Contest Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-white">
             <span className="block animate-slide-up">
-              {isRTL ? 'مسابقة "مدينتي" للرسم' : 'My City Drawing Competition'}
+              كلية العلوم الإنسانية والاجتماعية
             </span>
           </h1>
           
