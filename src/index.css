@@ -119,50 +119,49 @@
     animation: gradientShift 8s ease-in-out infinite alternate;
   }
 
-  /* Floating Educational Items */
-  .floating-item {
+  /* Floating LIMU Logos */
+  .floating-logo {
     position: absolute;
-    opacity: 0.7;
+    opacity: 0.8;
     animation: floatEducational 12s ease-in-out infinite;
     pointer-events: none;
     z-index: 1;
+    transition: all 0.3s ease;
+    filter: brightness(1.1);
   }
 
-  .floating-item-1 {
-    width: 60px;
-    height: 60px;
-    background: url('/images/floating-supplies-1.jpg') center/cover;
-    border-radius: 8px;
+  .floating-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .floating-logo-1 {
+    width: 120px;
+    height: auto;
     top: 15%;
     left: 10%;
     animation-delay: 0s;
   }
 
-  .floating-item-2 {
+  .floating-logo-2 {
     width: 80px;
-    height: 80px;
-    background: url('/images/floating-supplies-2.jpg') center/cover;
-    border-radius: 8px;
+    height: auto;
     top: 60%;
     right: 15%;
     animation-delay: 2s;
   }
 
-  .floating-item-3 {
+  .floating-logo-3 {
     width: 50px;
-    height: 50px;
-    background: url('/images/floating-supplies-1.jpg') center/cover;
-    border-radius: 8px;
+    height: auto;
     bottom: 25%;
     left: 20%;
     animation-delay: 4s;
   }
 
-  .floating-item-4 {
+  .floating-logo-4 {
     width: 70px;
-    height: 70px;
-    background: url('/images/floating-supplies-2.jpg') center/cover;
-    border-radius: 8px;
+    height: auto;
     top: 35%;
     right: 25%;
     animation-delay: 6s;
