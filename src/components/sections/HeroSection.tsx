@@ -78,7 +78,7 @@ export const HeroSection: React.FC = () => {
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-2xl">📅</span>
               <span className="text-lg font-bold">
-                {isRTL ? 'آخر موعد للتقديم' : 'Last Date for Submission'}
+                ملتقى ومعرض ليبيا الدولي للتعليم والتدريب
               </span>
             </div>
             <div className="text-2xl font-bold">
