@@ -44,9 +44,12 @@ export const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           {/* Contest Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-6 py-3 mb-8 animate-scale-in">
-            <Sparkles className="w-5 h-5 text-white animate-glow" />
-            
+          <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8 animate-scale-in">
+            <img 
+              src="/images/limu-logo-full.png" 
+              alt="شعار الجامعة الليبية الدولية" 
+              className="h-8 w-auto opacity-90 animate-pulse hover:opacity-100 transition-opacity duration-300"
+            />
           </div>
 
           {/* Main Contest Headline */}
