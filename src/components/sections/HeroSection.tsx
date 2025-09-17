@@ -14,78 +14,85 @@ export const HeroSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center hero-gradient">
       <LanguageToggle />
       
-      {/* Floating Background Orbs */}
-      <div className="floating-orb floating-orb-1" />
-      <div className="floating-orb floating-orb-2" />
-      <div className="floating-orb floating-orb-3" />
+      {/* Floating Educational Items */}
+      <div className="floating-item floating-item-1" />
+      <div className="floating-item floating-item-2" />
+      <div className="floating-item floating-item-3" />
+      <div className="floating-item floating-item-4" />
       
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-surface/80 backdrop-blur-md border border-border/50 rounded-full px-6 py-3 mb-8 animate-scale-in">
-            <Sparkles className="w-5 h-5 text-primary animate-glow" />
-            <span className="text-sm font-medium text-surface-foreground">
-              {isRTL ? 'معرض التعليم العالي 2025' : 'Higher Education Expo 2025'}
+          {/* Contest Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-6 py-3 mb-8 animate-scale-in">
+            <Sparkles className="w-5 h-5 text-white animate-glow" />
+            <span className="text-sm font-medium text-white">
+              {isRTL ? 'برعاية الجامعة الليبية الدولية' : 'Sponsored by Libyan International University'}
             </span>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight">
-            <span className="block animate-slide-up">{t('hero.headline')}</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-glow to-accent animate-slide-up animate-glow" style={{ animationDelay: '0.2s' }}>
-              {isRTL ? 'بوابتك إلى مهن المستقبل' : 'Your Gateway to Future Careers'}
+          {/* Main Contest Headline */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-white">
+            <span className="block animate-slide-up">
+              {isRTL ? 'مسابقة "مدينتي" للرسم' : 'My City Drawing Competition'}
             </span>
           </h1>
           
-          {/* Subline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            {t('hero.subline')}
-          </p>
+          {/* Contest Details */}
+          <div className="text-center mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <p className="text-lg md:text-xl text-white/90 mb-2">
+              {isRTL ? '🎨 ✨ هل طفلك يحب الرسم؟ ✨ 🎨' : '🎨 ✨ Does your child love drawing? ✨ 🎨'}
+            </p>
+          </div>
           
-          {/* CTAs */}
+          <div className="max-w-4xl mx-auto text-center mb-8">
+            <p className="text-lg md:text-xl text-white/95 mb-4 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              {isRTL ? 
+                'شاركنا موهبة طفلك في مسابقة الأطفال الفنية - "مدينتي" برعاية الجامعة الليبية الدولية' : 
+                'Share your child\'s talent in the artistic children\'s competition - "My City" sponsored by the Libyan International University'
+              }
+            </p>
+            <p className="text-base md:text-lg text-white/90 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              {isRTL ? 
+                'دع طفلك يرسم ما يحب في مدينته أو يتخيله في المستقبل: شارع، حديقة، ناس، أو أي مشهد يحبه' : 
+                'Let your child draw what they love about their city or imagine in the future: street, park, people, or any scene they love'
+              }
+            </p>
+          </div>
+          
+          {/* Contest CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in" style={{ animationDelay: '0.6s' }}>
             <button
-              onClick={() => scrollToSection('programs')}
-              className="btn-hero w-full sm:w-auto animate-float"
+              onClick={() => scrollToSection('lead-form')}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto animate-float"
             >
-              <span>{t('hero.cta_programs')}</span>
+              <span>{isRTL ? 'شارك الآن' : 'Participate Now'}</span>
             </button>
             
             <button
-              onClick={() => scrollToSection('lead-form')}
-              className="btn-secondary w-full sm:w-auto"
+              onClick={() => scrollToSection('programs')}
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
-              <Download className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-              <span>{t('hero.cta_brochure')}</span>
+              <span>{isRTL ? 'شاهد الأعمال السابقة' : 'View Previous Works'}</span>
             </button>
           </div>
 
-          {/* Quick Stats Preview */}
-          <div className="grid grid-cols-3 gap-8 pt-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <div className="text-center">
-              <div className="counter animate-counter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">7</div>
-              <div className="text-sm text-muted-foreground">
-                {isRTL ? 'برامج متميزة' : 'Distinguished Programs'}
-              </div>
+          {/* Contest Deadline Banner */}
+          <div className="contest-banner max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <span className="text-2xl">📅</span>
+              <span className="text-lg font-bold">
+                {isRTL ? 'آخر موعد للتقديم' : 'Last Date for Submission'}
+              </span>
             </div>
-            <div className="text-center">
-              <div className="counter animate-counter text-transparent bg-clip-text bg-gradient-to-r from-primary-glow to-primary" style={{ animationDelay: '0.5s' }}>15</div>
-              <div className="text-sm text-muted-foreground">
-                {isRTL ? 'مبادرة ابتكار' : 'Innovation Initiatives'}
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="counter animate-counter text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary-glow" style={{ animationDelay: '1s' }}>2,500+</div>
-              <div className="text-sm text-muted-foreground">
-                {isRTL ? 'خريج ناجح' : 'Successful Graduates'}
-              </div>
+            <div className="text-2xl font-bold">
+              {isRTL ? '30 أغسطس 2025' : 'August 30, 2025'}
             </div>
           </div>
           
           {/* Scroll Indicator */}
           <div className="animate-bounce mt-16" style={{ animationDelay: '1.2s' }}>
             <ChevronDown 
-              className="w-8 h-8 text-primary mx-auto cursor-pointer hover:scale-110 transition-transform animate-glow" 
+              className="w-8 h-8 text-white mx-auto cursor-pointer hover:scale-110 transition-transform animate-glow" 
               onClick={() => scrollToSection('programs')}
             />
           </div>
