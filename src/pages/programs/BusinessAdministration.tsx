@@ -57,7 +57,14 @@ const BusinessAdministration = () => {
 
       {/* Content Area */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative"
+             style={{
+               backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(147, 197, 253, 0.7) 50%, rgba(219, 234, 254, 0.5) 100%), url('/images/blue-gradient-bg.png')`,
+               backgroundSize: 'cover',
+               backgroundPosition: 'center',
+               backgroundRepeat: 'no-repeat',
+               borderRadius: '1rem'
+             }}>
           <div className="max-w-4xl mx-auto">
             
             {/* Program Overview */}
