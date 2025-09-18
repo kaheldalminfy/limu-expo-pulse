@@ -15,24 +15,22 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video */}
+      {/* Mobile-Friendly Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 w-full h-full">
-          <iframe
-            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&playlist=NJX1_7khZ1w"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </div>
-        {/* Light overlay for better text readability - reduced opacity */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 z-10" />
+        {/* Primary background image */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/bg-graduation.jpg')`,
+          }}
+        />
+        
+        {/* Animated gradient overlay for visual depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-blue-800/40 to-blue-900/70 animate-pulse" 
+             style={{ animationDuration: '4s' }} />
+        
+        {/* Additional overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/20" />
       </div>
 
       {/* Template-style Header Navigation */}
@@ -112,9 +110,6 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Dark blue overlay for text contrast */}
-      <div className="absolute inset-0 bg-blue-900/20" />
 
       {/* Optional: Minimal Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
