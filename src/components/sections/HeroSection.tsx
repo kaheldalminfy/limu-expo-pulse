@@ -108,8 +108,8 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Minimal overlay for text contrast only */}
-      <div className="absolute inset-0 bg-black/10" />
+      {/* Dark blue overlay for text contrast */}
+      <div className="absolute inset-0 bg-blue-900/20" />
 
       {/* Optional: Minimal Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
