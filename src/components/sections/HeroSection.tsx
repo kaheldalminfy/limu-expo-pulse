@@ -14,7 +14,28 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 w-full h-full">
+          <iframe
+            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&playlist=NJX1_7khZ1w"
+            className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            style={{
+              minWidth: '100vw',
+              minHeight: '100vh',
+              width: '300%',
+              height: '300%',
+            }}
+          />
+        </div>
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-primary/30 z-10" />
+      </div>
+
       {/* Template-style Header Navigation */}
       <div className="absolute top-0 left-0 right-0 z-20">
         <div className="container mx-auto px-4">
