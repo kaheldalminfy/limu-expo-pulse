@@ -1043,6 +1043,162 @@ export type Database = {
         }
         Relationships: []
       }
+      law_t_images: {
+        Row: {
+          created_at: string
+          created_by: string
+          description: string | null
+          id: string
+          image_url: string
+          program_id: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          created_by: string
+          description?: string | null
+          id?: string
+          image_url: string
+          program_id: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          description?: string | null
+          id?: string
+          image_url?: string
+          program_id?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "law_t_images_program_id_fkey"
+            columns: ["program_id"]
+            isOneToOne: false
+            referencedRelation: "law_t_programs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      law_t_news: {
+        Row: {
+          content: string
+          created_at: string
+          created_by: string
+          excerpt: string | null
+          id: string
+          image_url: string | null
+          program_id: string
+          published_at: string | null
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          content: string
+          created_at?: string
+          created_by: string
+          excerpt?: string | null
+          id?: string
+          image_url?: string | null
+          program_id: string
+          published_at?: string | null
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          content?: string
+          created_at?: string
+          created_by?: string
+          excerpt?: string | null
+          id?: string
+          image_url?: string | null
+          program_id?: string
+          published_at?: string | null
+          title?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "law_t_news_program_id_fkey"
+            columns: ["program_id"]
+            isOneToOne: false
+            referencedRelation: "law_t_programs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      law_t_programs: {
+        Row: {
+          created_at: string
+          id: string
+          name: string
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          name: string
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          name?: string
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      law_t_videos: {
+        Row: {
+          created_at: string
+          created_by: string
+          description: string | null
+          id: string
+          program_id: string
+          thumbnail_url: string | null
+          title: string
+          updated_at: string
+          video_url: string
+        }
+        Insert: {
+          created_at?: string
+          created_by: string
+          description?: string | null
+          id?: string
+          program_id: string
+          thumbnail_url?: string | null
+          title: string
+          updated_at?: string
+          video_url: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          description?: string | null
+          id?: string
+          program_id?: string
+          thumbnail_url?: string | null
+          title?: string
+          updated_at?: string
+          video_url?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "law_t_videos_program_id_fkey"
+            columns: ["program_id"]
+            isOneToOne: false
+            referencedRelation: "law_t_programs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       locations: {
         Row: {
           code: string

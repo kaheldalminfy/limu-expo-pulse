@@ -14,6 +14,7 @@ import ProjectManagement from "./pages/programs/ProjectManagement";
 import Law from "./pages/programs/Law";
 import EnglishGlobalCommunication from "./pages/programs/EnglishGlobalCommunication";
 import MscHealthcare from "./pages/programs/MscHealthcare";
+import ContentManagement from "./pages/ContentManagement";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/law" element={<Law />} />
             <Route path="/english-global-communication" element={<EnglishGlobalCommunication />} />
             <Route path="/msc-healthcare" element={<MscHealthcare />} />
+            <Route path="/content-management" element={<ContentManagement />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
