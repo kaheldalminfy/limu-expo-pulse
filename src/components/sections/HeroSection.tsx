@@ -32,8 +32,8 @@ export const HeroSection: React.FC = () => {
             }}
           />
         </div>
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/70 via-primary/50 to-primary/30 z-10" />
+        {/* Light overlay for better text readability - reduced opacity */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 z-10" />
       </div>
 
       {/* Template-style Header Navigation */}
@@ -109,13 +109,13 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Background Overlay - Template Style */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-primary/40" />
+      {/* Minimal overlay for text contrast only */}
+      <div className="absolute inset-0 bg-black/10" />
 
-      {/* Optional: Floating Elements */}
+      {/* Optional: Minimal Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-white/3 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/2 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-white/1 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
     </section>
   );
