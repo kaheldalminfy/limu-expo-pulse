@@ -100,6 +100,141 @@ const EnglishGlobalCommunication = () => {
               </div>
             </div>
 
+            {/* Video Album Section */}
+            <div className="bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/30 dark:to-blue-900/20 rounded-3xl p-8 mb-8 border border-blue-200/50 dark:border-blue-800/30 backdrop-blur-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM5 8a1 1 0 000 2h8a1 1 0 100-2H5z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-display font-bold text-card-foreground">
+                  {isRTL ? 'ألبوم الفيديوهات' : 'Video Gallery'}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-video">
+                    <iframe 
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      title="مقدمة عن برنامج الإنجليزية والاتصال العالمي"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
+                      {isRTL ? 'مقدمة عن برنامج الإنجليزية والاتصال العالمي' : 'Introduction to English & Global Communication Program'}
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {isRTL ? 'تعرف على كيفية تأهيل طلاب البرنامج ليكونوا جسر التواصل مع العالم الخارجي.' : 'Learn how program students are prepared to be the bridge of communication with the outside world.'}
+                    </p>
+                  </div>
+                </div>
+                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-video">
+                    <iframe 
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      title="تجربة طلاب الإنجليزية والاتصال العالمي"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
+                      {isRTL ? 'تجربة طلاب الإنجليزية والاتصال العالمي' : 'English & Global Communication Students Experience'}
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {isRTL ? 'استمع لتجارب طلابنا في تطوير مهاراتهم اللغوية والثقافية للتواصل الفعال.' : 'Listen to our students\' experiences in developing their linguistic and cultural skills for effective communication.'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Photo Album Section */}
+            <div className="bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/30 dark:to-green-900/20 rounded-3xl p-8 mb-8 border border-green-200/50 dark:border-green-800/30 backdrop-blur-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-display font-bold text-card-foreground">
+                  {isRTL ? 'ألبوم الصور' : 'Photo Gallery'}
+                </h3>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/english-communication.jpg" alt={isRTL ? 'فعاليات برنامج الإنجليزية والاتصال العالمي' : 'English & Global Communication Program Activities'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/classrooms.jpg" alt={isRTL ? 'قاعات الدراسة' : 'Study Halls'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/bg-graduation.jpg" alt={isRTL ? 'حفل التخرج' : 'Graduation Ceremony'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/bg-meeting1.jpg" alt={isRTL ? 'ورش العمل' : 'Workshops'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/labs.jpg" alt={isRTL ? 'المختبرات' : 'Laboratories'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="aspect-square bg-muted rounded-xl overflow-hidden group cursor-pointer">
+                  <img src="/images/library.jpg" alt={isRTL ? 'المكتبة' : 'Library'} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+              </div>
+            </div>
+
+            {/* Latest News Section */}
+            <div className="bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/30 dark:to-purple-900/20 rounded-3xl p-8 mb-8 border border-purple-200/50 dark:border-purple-800/30 backdrop-blur-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd"/>
+                    <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v3a2 2 0 01-2 2H4.5a1.5 1.5 0 010-3H11V7z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-display font-bold text-card-foreground">
+                  {isRTL ? 'آخر الأخبار' : 'Latest News'}
+                </h3>
+              </div>
+              <div className="space-y-6">
+                <article className="bg-white/60 dark:bg-gray-800/60 rounded-xl p-6 shadow-sm">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
+                    </svg>
+                    <time dateTime="2024-01-28">28 يناير 2024</time>
+                  </div>
+                  <h4 className="text-lg font-semibold text-card-foreground mb-3">
+                    {isRTL ? 'مؤتمر التبادل الثقافي الدولي' : 'International Cultural Exchange Conference'}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {isRTL ? 'نظم البرنامج مؤتمراً دولياً للتبادل الثقافي بمشاركة جامعات من أوروبا وأمريكا لتعزيز التفاهم الثقافي.' : 'The program organized an international cultural exchange conference with participation from universities in Europe and America to enhance cultural understanding.'}
+                  </p>
+                </article>
+                <article className="bg-white/60 dark:bg-gray-800/60 rounded-xl p-6 shadow-sm">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
+                    </svg>
+                    <time dateTime="2024-01-20">20 يناير 2024</time>
+                  </div>
+                  <h4 className="text-lg font-semibold text-card-foreground mb-3">
+                    {isRTL ? 'إطلاق برنامج التبادل الطلابي' : 'Launch of Student Exchange Program'}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {isRTL ? 'أطلقت الجامعة برنامج تبادل طلابي مع جامعات بريطانية وأمريكية لتمكين طلاب البرنامج من خبرة دولية.' : 'The university launched a student exchange program with British and American universities to enable program students to gain international experience.'}
+                  </p>
+                </article>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
