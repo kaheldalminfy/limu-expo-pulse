@@ -61,17 +61,16 @@ export const NewsForm: React.FC<NewsFormProps> = ({ programs }) => {
     setLoading(true);
 
     try {
+      // Get user if authenticated, otherwise use default value
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) {
-        throw new Error('User not authenticated');
-      }
+      const created_by = user?.id || '00000000-0000-0000-0000-000000000000';
 
       const { error } = await supabase
         .from('law_t_news')
         .insert([
           {
             ...formData,
-            created_by: user.id
+            created_by: created_by
           }
         ]);
 
