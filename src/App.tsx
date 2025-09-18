@@ -5,8 +5,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import Index from "./pages/Index";
-import ProgramDetail from "./pages/ProgramDetail";
 import NotFound from "./pages/NotFound";
+import HealthcareManagement from "./pages/programs/HealthcareManagement";
+import BusinessAdministration from "./pages/programs/BusinessAdministration";
+import FinanceBanking from "./pages/programs/FinanceBanking";
+import Marketing from "./pages/programs/Marketing";
+import ProjectManagement from "./pages/programs/ProjectManagement";
+import Law from "./pages/programs/Law";
+import EnglishGlobalCommunication from "./pages/programs/EnglishGlobalCommunication";
+import MscHealthcare from "./pages/programs/MscHealthcare";
 
 const queryClient = new QueryClient();
 
@@ -19,7 +26,14 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/programs/:slug" element={<ProgramDetail />} />
+            <Route path="/healthcare-management" element={<HealthcareManagement />} />
+            <Route path="/business-administration" element={<BusinessAdministration />} />
+            <Route path="/finance-banking" element={<FinanceBanking />} />
+            <Route path="/marketing" element={<Marketing />} />
+            <Route path="/project-management" element={<ProjectManagement />} />
+            <Route path="/law" element={<Law />} />
+            <Route path="/english-global-communication" element={<EnglishGlobalCommunication />} />
+            <Route path="/msc-healthcare" element={<MscHealthcare />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

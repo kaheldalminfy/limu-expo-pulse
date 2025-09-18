@@ -51,7 +51,7 @@ export const ProgramsSection: React.FC = () => {
             return (
               <Link
                 key={program.slug}
-                to={`/programs/${program.slug}`}
+                to={`/${program.slug}`}
                 className="program-card animate-fade-in block"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
