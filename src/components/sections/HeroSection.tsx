@@ -20,15 +20,14 @@ export const HeroSection: React.FC = () => {
         <div className="absolute inset-0 w-full h-full">
           <iframe
             src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&playlist=NJX1_7khZ1w"
-            className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
             style={{
-              minWidth: '100vw',
-              minHeight: '100vh',
-              width: '300%',
-              height: '300%',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
             }}
           />
         </div>
