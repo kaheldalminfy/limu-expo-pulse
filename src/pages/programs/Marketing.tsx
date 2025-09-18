@@ -42,7 +42,13 @@ const Marketing = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
+      <section className="py-20 relative"
+               style={{
+                 backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(147, 197, 253, 0.6) 50%, rgba(219, 234, 254, 0.4) 100%), url('/images/hero-blue-bg.png')`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundRepeat: 'no-repeat'
+               }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-display font-bold text-card-foreground mb-6">
@@ -56,7 +62,13 @@ const Marketing = () => {
       </section>
 
       {/* Content Area */}
-      <section className="py-20">
+      <section className="py-20 relative"
+               style={{
+                 backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(147, 197, 253, 0.7) 50%, rgba(219, 234, 254, 0.5) 100%), url('/images/blue-section-bg.png')`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundRepeat: 'no-repeat'
+               }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             
