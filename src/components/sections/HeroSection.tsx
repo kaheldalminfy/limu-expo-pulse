@@ -19,15 +19,18 @@ export const HeroSection: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 w-full h-full">
           <iframe
-            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&playlist=NJX1_7khZ1w"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&playlist=NJX1_7khZ1w&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&disablekb=1&fs=0&cc_load_policy=0&hl=ar&color=white&autohide=1&wmode=opaque"
+            className="absolute inset-0 w-full h-full pointer-events-none"
             frameBorder="0"
-            allow="autoplay; encrypted-media"
+            allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer"
             allowFullScreen
             style={{
-              width: '100%',
-              height: '100%',
+              width: '100vw',
+              height: '100vh',
+              minWidth: '100%',
+              minHeight: '100%',
               objectFit: 'cover',
+              transform: 'scale(1.02)',
             }}
           />
         </div>
