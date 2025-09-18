@@ -61,24 +61,12 @@ export const VideoUploadForm: React.FC<VideoUploadFormProps> = ({ programs }) =>
     setLoading(true);
 
     try {
-      // Check if user is authenticated
-      const { data: { user } } = await supabase.auth.getUser();
-      
-      if (!user) {
-        toast({
-          title: language === 'ar' ? 'يجب تسجيل الدخول أولاً' : 'Please login first',
-          variant: "destructive",
-        });
-        setLoading(false);
-        return;
-      }
-
       const { error } = await supabase
         .from('law_t_videos')
         .insert([
           {
             ...formData,
-            created_by: user.id
+            created_by: '00000000-0000-0000-0000-000000000000'
           }
         ]);
 
