@@ -58,16 +58,24 @@ export const ImageUploadForm: React.FC<ImageUploadFormProps> = ({ programs }) =>
     setLoading(true);
 
     try {
-      // Get user if authenticated, otherwise use default value
+      // Check if user is authenticated
       const { data: { user } } = await supabase.auth.getUser();
-      const created_by = user?.id || '00000000-0000-0000-0000-000000000000';
+      
+      if (!user) {
+        toast({
+          title: language === 'ar' ? 'يجب تسجيل الدخول أولاً' : 'Please login first',
+          variant: "destructive",
+        });
+        setLoading(false);
+        return;
+      }
 
       const { error } = await supabase
         .from('law_t_images')
         .insert([
           {
             ...formData,
-            created_by: created_by
+            created_by: user.id
           }
         ]);
 
