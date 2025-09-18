@@ -72,7 +72,7 @@ const ProgramDetail = () => {
         </div>
       </section>
 
-      {/* Content Area - Ready for expansion */}
+      {/* Content Area */}
       <section className="py-20">
         <div className="container mx-auto px-4 bg-gradient-to-br from-blue-900/80 via-blue-800/60 to-blue-700/40 backdrop-blur-sm rounded-2xl">
           <div className="max-w-4xl mx-auto">
@@ -118,168 +118,162 @@ const ProgramDetail = () => {
             </div>
 
             {/* Video Album Section */}
-            <div className="bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/30 dark:to-blue-900/20 rounded-3xl p-8 mb-8 border border-blue-200/50 dark:border-blue-800/30 backdrop-blur-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM5 8a1 1 0 000 2h8a1 1 0 100-2H5z"/>
-                  </svg>
+            {program.videos && program.videos.length > 0 && (
+              <div className="bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/30 dark:to-blue-900/20 rounded-3xl p-8 mb-8 border border-blue-200/50 dark:border-blue-800/30 backdrop-blur-sm">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM5 8a1 1 0 000 2h8a1 1 0 100-2H5z"/>
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-display font-bold text-card-foreground">
+                    {isRTL ? 'ألبوم الفيديوهات' : 'Video Gallery'}
+                  </h3>
                 </div>
-                <h3 className="text-2xl font-display font-bold text-card-foreground">
-                  {isRTL ? 'ألبوم الفيديوهات' : 'Video Gallery'}
-                </h3>
-              </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Video 1 - عبد الرحمن العربي */}
-                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="aspect-video">
-                    <iframe 
-                      src="https://www.youtube.com/embed/ADB8E2TMi9o"
-                      title="تجربة الطالب عبد الرحمن العربي في برنامج إدارة الرعاية الصحية"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
-                      تجربة الطالب عبد الرحمن العربي
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      يشارك طالبنا عبد الرحمن العربي رؤى من رحلتهم في برنامج إدارة الرعاية الصحية في الجامعة الطبية الليبية الدولية. يفكرون في كيفية تزويدهم البرنامج بالمهارات الأساسية في إدارة الرعاية الصحية، ومزج المعرفة النظرية مع الخبرات العملية، مثل التدريب الداخلي والمشاريع الصناعية.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Video 2 - Zaho */}
-                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="aspect-video">
-                    <iframe 
-                      src="https://www.youtube.com/embed/pJiOjikohy8"
-                      title="تجربة الطالبة Zaho في برنامج إدارة الرعاية الصحية"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h4 className="font-semibold text-card-foreground mb-3 text-lg">
-                      تجربة الطالبة Zaho
-                    </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      تؤكد طالبتنا Zaho على بيئة التعلم الداعمة وفرصة التفاعل مع أعضاء هيئة التدريس ذوي الخبرة، مما أثرى فهمها لمشهد الرعاية الصحية. لم تعدها خبرتها لمواجهة تحديات الصناعة فحسب، بل ألهمتها أيضاً لتصبح رائدة قادرة على إحداث تغيير إيجابي في إدارة الرعاية الصحية.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Video 3 - د. ابتسام ماضي */}
-                <div className="group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 lg:col-span-2">
-                  <div className="flex flex-col lg:flex-row">
-                    <div className="lg:w-1/2 aspect-video lg:aspect-auto">
-                      <iframe 
-                        src="https://www.youtube.com/embed/tbGCTDEJuEw"
-                        title="د. ابتسام ماضي - رئيس برنامج إدارة الرعاية الصحية"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        className="w-full h-full"
-                      />
-                    </div>
-                    <div className="lg:w-1/2 p-6 flex flex-col justify-center">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-                          </svg>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {program.videos.map((video, index) => (
+                    <div key={video.id} className={`group bg-white/70 dark:bg-gray-800/70 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${video.isInstructor ? 'lg:col-span-2' : ''}`}>
+                      {video.isInstructor ? (
+                        <div className="flex flex-col lg:flex-row">
+                          <div className="lg:w-1/2 aspect-video lg:aspect-auto">
+                            <iframe 
+                              src={`https://www.youtube.com/embed/${video.id}`}
+                              title={video.title}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullScreen
+                              className="w-full h-full"
+                            />
+                          </div>
+                          <div className="lg:w-1/2 p-6 flex flex-col justify-center">
+                            <div className="flex items-center gap-3 mb-4">
+                              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                                </svg>
+                              </div>
+                              <span className="text-xs bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full font-medium">
+                                {video.instructorRole}
+                              </span>
+                            </div>
+                            <h4 className="font-semibold text-card-foreground mb-3 text-xl">
+                              {video.title}
+                            </h4>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                              {video.description}
+                            </p>
+                          </div>
                         </div>
-                        <span className="text-xs bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full font-medium">
-                          مديرة البرنامج
-                        </span>
-                      </div>
-                      <h4 className="font-semibold text-card-foreground mb-3 text-xl">
-                        د. ابتسام ماضي
-                      </h4>
-                      <p className="text-muted-foreground mb-4">
-                        رئيس برنامج إدارة الرعاية الصحية
-                      </p>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        تتحدث الدكتورة ابتسام ماضي عن رؤية وأهداف برنامج إدارة الرعاية الصحية، والمنهجية التعليمية المتطورة المتبعة لإعداد جيل من المختصين القادرين على إدارة وتطوير أنظمة الرعاية الصحية.
-                      </p>
+                      ) : (
+                        <>
+                          <div className="aspect-video">
+                            <iframe 
+                              src={`https://www.youtube.com/embed/${video.id}`}
+                              title={video.title}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowFullScreen
+                              className="w-full h-full"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <h4 className="font-semibold text-card-foreground mb-3 text-lg">
+                              {video.title}
+                            </h4>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                              {video.description}
+                            </p>
+                          </div>
+                        </>
+                      )}
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </div>
+            )}
 
             {/* Photo Album Section */}
-            <div className="bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/30 dark:to-purple-900/20 rounded-3xl p-8 mb-8 border border-purple-200/50 dark:border-purple-800/30 backdrop-blur-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-display font-bold text-card-foreground">
-                  {isRTL ? 'ألبوم الصور' : 'Photo Gallery'}
-                </h3>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {[1, 2, 3, 4, 5, 6].map((index) => (
-                  <div key={index} className="group relative aspect-square bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                      <svg className="w-8 h-8 text-white/80 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd"/>
-                      </svg>
-                    </div>
+            {program.photos && program.photos.length > 0 && (
+              <div className="bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/30 dark:to-purple-900/20 rounded-3xl p-8 mb-8 border border-purple-200/50 dark:border-purple-800/30 backdrop-blur-sm">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd"/>
+                    </svg>
                   </div>
-                ))}
+                  <h3 className="text-2xl font-display font-bold text-card-foreground">
+                    {isRTL ? 'ألبوم الصور' : 'Photo Gallery'}
+                  </h3>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {program.photos.map((photo) => (
+                    <div key={photo.id} className="group relative aspect-square bg-muted rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                      <img 
+                        src={photo.image} 
+                        alt={photo.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM4YjVjZjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj7Sos+I2LHYqTwvdGV4dD48L3N2Zz4=';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-end">
+                        <div className="p-3 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                          <p className="text-sm font-medium">{photo.title}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Latest News Section */}
-            <div className="bg-gradient-to-br from-emerald-50/50 to-emerald-100/30 dark:from-emerald-950/30 dark:to-emerald-900/20 rounded-3xl p-8 border border-emerald-200/50 dark:border-emerald-800/30 backdrop-blur-sm">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd"/>
-                    <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-display font-bold text-card-foreground">
-                  {isRTL ? 'آخر الأخبار' : 'Latest News'}
-                </h3>
-              </div>
-              <div className="space-y-6">
-                {[1, 2, 3].map((index) => (
-                  <div key={index} className="group flex gap-4 p-6 bg-white/70 dark:bg-gray-800/70 rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                    <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">{index}</span>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="text-xs bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded-full">
-                          {isRTL ? 'جديد' : 'New'}
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          {isRTL ? '15 يناير 2025' : 'January 15, 2025'}
-                        </span>
-                      </div>
-                      <h4 className="font-semibold text-card-foreground mb-2 group-hover:text-emerald-600 transition-colors">
-                        {isRTL ? `خبر مهم رقم ${index} حول البرنامج` : `Important News ${index} About the Program`}
-                      </h4>
-                      <p className="text-sm text-muted-foreground line-clamp-2">
-                        {isRTL 
-                          ? 'نص تجريبي لوصف الخبر والتفاصيل المهمة التي يجب على الطلاب معرفتها حول البرنامج الأكاديمي.'
-                          : 'Sample text describing the news and important details that students should know about the academic program.'
-                        }
-                      </p>
-                    </div>
+            {program.news && program.news.length > 0 && (
+              <div className="bg-gradient-to-br from-emerald-50/50 to-emerald-100/30 dark:from-emerald-950/30 dark:to-emerald-900/20 rounded-3xl p-8 border border-emerald-200/50 dark:border-emerald-800/30 backdrop-blur-sm">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clipRule="evenodd"/>
+                      <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"/>
+                    </svg>
                   </div>
-                ))}
+                  <h3 className="text-2xl font-display font-bold text-card-foreground">
+                    {isRTL ? 'آخر الأخبار' : 'Latest News'}
+                  </h3>
+                </div>
+                <div className="space-y-6">
+                  {program.news.map((newsItem) => (
+                    <div key={newsItem.id} className="group flex gap-4 p-6 bg-white/70 dark:bg-gray-800/70 rounded-2xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                      <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
+                        <span className="text-white font-bold text-lg">{newsItem.id}</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          {newsItem.isNew && (
+                            <span className="text-xs bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded-full">
+                              {isRTL ? 'جديد' : 'New'}
+                            </span>
+                          )}
+                          <span className="text-xs text-muted-foreground">
+                            {new Date(newsItem.date).toLocaleDateString(isRTL ? 'ar-EG' : 'en-US', {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric'
+                            })}
+                          </span>
+                        </div>
+                        <h4 className="font-semibold text-card-foreground mb-2 group-hover:text-emerald-600 transition-colors">
+                          {newsItem.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {newsItem.summary}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
           </div>
         </div>

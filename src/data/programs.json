@@ -17,7 +17,81 @@
     },
     "pdf": "/brochures/healthcare.pdf",
     "icon": "stethoscope",
-    "image": "/images/healthcare-management.jpg"
+    "image": "/images/healthcare-management.jpg",
+    "videos": [
+      {
+        "id": "ADB8E2TMi9o",
+        "title": "تجربة الطالب عبد الرحمن العربي",
+        "description": "يشارك طالبنا عبد الرحمن العربي رؤى من رحلتهم في برنامج إدارة الرعاية الصحية في الجامعة الطبية الليبية الدولية. يفكرون في كيفية تزويدهم البرنامج بالمهارات الأساسية في إدارة الرعاية الصحية، ومزج المعرفة النظرية مع الخبرات العملية، مثل التدريب الداخلي والمشاريع الصناعية."
+      },
+      {
+        "id": "pJiOjikohy8",
+        "title": "تجربة الطالبة Zaho",
+        "description": "تؤكد طالبتنا Zaho على بيئة التعلم الداعمة وفرصة التفاعل مع أعضاء هيئة التدريس ذوي الخبرة، مما أثرى فهمها لمشهد الرعاية الصحية. لم تعدها خبرتها لمواجهة تحديات الصناعة فحسب، بل ألهمتها أيضاً لتصبح رائدة قادرة على إحداث تغيير إيجابي في إدارة الرعاية الصحية."
+      },
+      {
+        "id": "tbGCTDEJuEw",
+        "title": "د. ابتسام ماضي",
+        "description": "تتحدث الدكتورة ابتسام ماضي، مديرة برنامج إدارة الرعاية الصحية، عن رؤية وأهداف البرنامج، والمنهجية التعليمية المتطورة المتبعة لإعداد جيل من المختصين القادرين على إدارة وتطوير أنظمة الرعاية الصحية.",
+        "isInstructor": true,
+        "instructorRole": "مديرة البرنامج"
+      }
+    ],
+    "photos": [
+      {
+        "id": 1,
+        "title": "قاعة المحاضرات الرئيسية",
+        "image": "/images/classrooms.jpg"
+      },
+      {
+        "id": 2,
+        "title": "المختبرات الطبية",
+        "image": "/images/labs.jpg"
+      },
+      {
+        "id": 3,
+        "title": "المكتبة الطبية",
+        "image": "/images/library.jpg"
+      },
+      {
+        "id": 4,
+        "title": "ورشة عمل إدارية",
+        "image": "/images/bg-meeting1.jpg"
+      },
+      {
+        "id": 5,
+        "title": "تخرج دفعة 2024",
+        "image": "/images/bg-graduation.jpg"
+      },
+      {
+        "id": 6,
+        "title": "مؤتمر الرعاية الصحية",
+        "image": "/images/bg-meeting2.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "بدء التسجيل في دبلوم إدارة المستشفيات",
+        "date": "2025-01-15",
+        "summary": "أعلنت الجامعة الطبية الليبية الدولية عن فتح باب التسجيل في برنامج الدبلوم المتخصص في إدارة المستشفيات والمنشآت الصحية للعام الدراسي الجديد.",
+        "isNew": true
+      },
+      {
+        "id": 2,
+        "title": "شراكة جديدة مع وزارة الصحة",
+        "date": "2025-01-10",
+        "summary": "وقعت الجامعة اتفاقية تعاون مع وزارة الصحة الليبية لتدريب طلاب برنامج إدارة الرعاية الصحية في المستشفيات الحكومية.",
+        "isNew": true
+      },
+      {
+        "id": 3,
+        "title": "ورشة عمل حول إدارة الجودة في الرعاية الصحية",
+        "date": "2025-01-05",
+        "summary": "نظمت كلية إدارة الأعمال ورشة عمل متخصصة حول معايير الجودة الدولية في إدارة المنشآت الصحية بمشاركة خبراء دوليين.",
+        "isNew": false
+      }
+    ]
   },
   {
     "slug": "business-administration",
@@ -37,7 +111,57 @@
     },
     "pdf": "/brochures/business.pdf",
     "icon": "briefcase",
-    "image": "/images/business-administration.jpg"
+    "image": "/images/business-administration.jpg",
+    "videos": [
+      {
+        "id": "business1",
+        "title": "نجاح رائد الأعمال أحمد الطاهر",
+        "description": "قصة نجاح الخريج أحمد الطاهر الذي أسس شركته الناشئة في مجال التكنولوجيا المالية بعد تخرجه من برنامج إدارة الأعمال."
+      },
+      {
+        "id": "business2",
+        "title": "ورشة ريادة الأعمال",
+        "description": "جلسة تفاعلية مع الطلاب حول أساسيات ريادة الأعمال والابتكار في السوق الليبي."
+      }
+    ],
+    "photos": [
+      {
+        "id": 1,
+        "title": "قاعة محاضرات إدارة الأعمال",
+        "image": "/images/classrooms.jpg"
+      },
+      {
+        "id": 2,
+        "title": "مختبر الحاسوب",
+        "image": "/images/labs.jpg"
+      },
+      {
+        "id": 3,
+        "title": "نشاطات الطلاب",
+        "image": "/images/clubs.jpg"
+      },
+      {
+        "id": 4,
+        "title": "ورشة ريادة الأعمال",
+        "image": "/images/bg-meeting1.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "إطلاق برنامج حاضنة الأعمال الجامعية",
+        "date": "2025-01-12",
+        "summary": "أطلقت الجامعة برنامج حاضنة الأعمال لدعم مشاريع الطلاب وخريجي برنامج إدارة الأعمال.",
+        "isNew": true
+      },
+      {
+        "id": 2,
+        "title": "مؤتمر الأعمال الليبي السنوي",
+        "date": "2025-01-08",
+        "summary": "استضافت الجامعة المؤتمر السنوي للأعمال بمشاركة رجال أعمال وخبراء من داخل وخارج ليبيا.",
+        "isNew": false
+      }
+    ]
   },
   {
     "slug": "finance-banking",
@@ -57,7 +181,29 @@
     },
     "pdf": "/brochures/finance.pdf",
     "icon": "banknote",
-    "image": "/images/finance-banking.jpg"
+    "image": "/images/finance-banking.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "قاعة التداول المالي",
+        "image": "/images/labs.jpg"
+      },
+      {
+        "id": 2,
+        "title": "ورشة تحليل الأسواق المالية",
+        "image": "/images/bg-meeting1.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "إطلاق برنامج التداول التجريبي",
+        "date": "2025-01-14",
+        "summary": "أطلقت كلية إدارة الأعمال برنامج التداول التجريبي لطلاب التمويل والمصارف لاكتساب خبرة عملية في الأسواق المالية.",
+        "isNew": true
+      }
+    ]
   },
   {
     "slug": "marketing",
@@ -77,7 +223,29 @@
     },
     "pdf": "/brochures/marketing.pdf",
     "icon": "megaphone",
-    "image": "/images/marketing.jpg"
+    "image": "/images/marketing.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "ورشة التسويق الرقمي",
+        "image": "/images/bg-meeting2.jpg"
+      },
+      {
+        "id": 2,
+        "title": "مشروع تخرج - حملة إعلانية",
+        "image": "/images/clubs.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "شراكة مع شركات التسويق الرقمي",
+        "date": "2025-01-13",
+        "summary": "وقعت الجامعة اتفاقيات شراكة مع أبرز شركات التسويق الرقمي في ليبيا لتدريب طلاب برنامج التسويق.",
+        "isNew": true
+      }
+    ]
   },
   {
     "slug": "project-management",
@@ -97,7 +265,29 @@
     },
     "pdf": "/brochures/project-management.pdf",
     "icon": "clipboard",
-    "image": "/images/project-management.jpg"
+    "image": "/images/project-management.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "ورشة تخطيط المشاريع",
+        "image": "/images/bg-meeting1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "فريق المشروع التطبيقي",
+        "image": "/images/clubs.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "مشروع تطوير البنية التحتية",
+        "date": "2025-01-11",
+        "summary": "انطلق مشروع تطبيقي لطلاب إدارة المشاريع لتطوير البنية التحتية التعليمية بالتعاون مع وزارة التعليم.",
+        "isNew": true
+      }
+    ]
   },
   {
     "slug": "law",
@@ -117,7 +307,29 @@
     },
     "pdf": "/brochures/law.pdf",
     "icon": "scale",
-    "image": "/images/law.jpg"
+    "image": "/images/law.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "قاعة المحكمة التعليمية",
+        "image": "/images/classrooms.jpg"
+      },
+      {
+        "id": 2,
+        "title": "مكتبة القانون",
+        "image": "/images/library.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "مسابقة المحاكمة الصورية",
+        "date": "2025-01-09",
+        "summary": "نظمت كلية القانون مسابقة المحاكمة الصورية السنوية بمشاركة طلاب من جامعات ليبية مختلفة.",
+        "isNew": false
+      }
+    ]
   },
   {
     "slug": "english-global-communication",
@@ -137,7 +349,29 @@
     },
     "pdf": "/brochures/english.pdf",
     "icon": "globe",
-    "image": "/images/english-communication.jpg"
+    "image": "/images/english-communication.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "مختبر اللغات",
+        "image": "/images/labs.jpg"
+      },
+      {
+        "id": 2,
+        "title": "ورشة الترجمة الفورية",
+        "image": "/images/bg-meeting2.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "برنامج التبادل الثقافي مع جامعات أوروبية",
+        "date": "2025-01-07",
+        "summary": "أعلنت الجامعة عن برنامج التبادل الثقافي مع جامعات أوروبية لطلاب برنامج الإنجليزية والاتصال العالمي.",
+        "isNew": true
+      }
+    ]
   },
   {
     "slug": "msc-healthcare-management",
@@ -157,6 +391,28 @@
     },
     "pdf": "/brochures/msc-healthcare-management.pdf",
     "icon": "stethoscope",
-    "image": "/images/msc-healthcare.jpg"
+    "image": "/images/msc-healthcare.jpg",
+    "videos": [],
+    "photos": [
+      {
+        "id": 1,
+        "title": "ورشة البحث العلمي المتقدم",
+        "image": "/images/bg-meeting1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "تخرج دفعة الماجستير 2024",
+        "image": "/images/bg-graduation.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "فتح التسجيل لبرنامج الماجستير",
+        "date": "2025-01-16",
+        "summary": "بدأت الجامعة في قبول طلبات الالتحاق ببرنامج ماجستير إدارة الرعاية الصحية للعام الأكاديمي القادم.",
+        "isNew": true
+      }
+    ]
   }
 ]
