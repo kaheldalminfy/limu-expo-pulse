@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft, BookOpen } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -106,8 +106,8 @@ export const HeroSection: React.FC = () => {
               onClick={() => scrollToSection("programs")}
               className="inline-flex items-center gap-3 bg-white text-primary font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
-              <ChevronIcon className="w-5 h-5" />
-              <span>{isRTL ? "اقرأ المزيد" : "READ MORE"}</span>
+              <BookOpen className="w-5 h-5" />
+              <span>{isRTL ? "استكشاف البرامج" : "Explore Programs"}</span>
             </button>
           </div>
         </div>
