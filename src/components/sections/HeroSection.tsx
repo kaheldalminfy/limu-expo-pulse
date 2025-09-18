@@ -71,38 +71,43 @@ export const HeroSection: React.FC = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-8 leading-tight text-white animate-fade-in">
             {isRTL ? (
               <>
-                <span className="block">البحث العلمي</span>
-                <span className="block">والابتكار</span>
+                <span className="block">كلية العلوم الإنسانية</span>
+                <span className="block">والاجتماعية</span>
               </>
             ) : (
               <>
-                <span className="block">Scientific Research</span>
-                <span className="block">and Innovation</span>
+                <span className="block">Faculty of Humanities</span>
+                <span className="block">& Social Sciences</span>
               </>
             )}
           </h1>
           
           {/* Subtitle */}
-          <h2 className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            {isRTL ? 'على الساحل الليبي الجميل' : 'On the Beautiful Libyan Coast'}
+          <h2 className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            {isRTL ? "الجامعة الليبية الدولية" : "Libyan International Medical University"}
           </h2>
           
-          {/* Description */}
-          <p className="text-lg md:text-xl text-white/85 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          {/* Main Description */}
+          <p className="text-lg md:text-xl text-white/95 mb-4 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            {isRTL ? "بوابتك إلى مهن المستقبل" : "Your Gateway to Future Careers"}
+          </p>
+          
+          {/* Supporting Description */}
+          <p className="text-base md:text-lg text-white/85 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.6s" }}>
             {isRTL 
-              ? 'نساهم في تطوير المعرفة الإنسانية من خلال البحوث المتقدمة والدراسات المبتكرة في أجمل مدن ليبيا'
-              : 'We contribute to developing human knowledge through advanced research and innovative studies in the most beautiful cities of Libya'
+              ? "تعرّف بسرعة على برامجنا وفرص المسارات المهنية"
+              : "Quickly discover our programs and career pathway opportunities"
             }
           </p>
           
           {/* CTA Button */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="animate-fade-in" style={{ animationDelay: "0.8s" }}>
             <button 
-              onClick={() => scrollToSection('programs')}
+              onClick={() => scrollToSection("programs")}
               className="inline-flex items-center gap-3 bg-white text-primary font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               <ChevronIcon className="w-5 h-5" />
-              <span>{isRTL ? 'اقرأ المزيد' : 'READ MORE'}</span>
+              <span>{isRTL ? "اقرأ المزيد" : "READ MORE"}</span>
             </button>
           </div>
         </div>
