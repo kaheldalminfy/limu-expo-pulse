@@ -53,10 +53,17 @@ export default {
           foreground: "hsl(var(--surface-foreground))",
           hover: "hsl(var(--surface-hover))",
         },
+        // Program Card Colors
+        "card-purple": "hsl(var(--card-purple))",
+        "card-green": "hsl(var(--card-green))",
+        "card-blue": "hsl(var(--card-blue))",
+        "card-orange": "hsl(var(--card-orange))",
+        "card-teal": "hsl(var(--card-teal))",
+        "card-red": "hsl(var(--card-red))",
       },
       fontFamily: {
-        display: ['Cairo', 'Inter', 'system-ui', 'sans-serif'],
-        body: ['Tajawal', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Cairo', 'Roboto', 'Inter', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'Cairo', 'Roboto', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

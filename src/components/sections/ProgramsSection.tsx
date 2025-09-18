@@ -24,64 +24,79 @@ const iconMap = {
   globe: Globe,
 };
 
+// Color mapping for each program - matching template style
+const programColors = [
+  'program-card-purple',
+  'program-card-green', 
+  'program-card-blue',
+  'program-card-orange',
+  'program-card-teal',
+  'program-card-red',
+  'program-card-purple', // For 7th program if exists
+];
 
 export const ProgramsSection: React.FC = () => {
   const { language, t, isRTL } = useLanguage();
   const ChevronIcon = isRTL ? ArrowLeft : ArrowRight;
 
   return (
-    <section id="programs" className="py-20 bg-background">
+    <section id="programs" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        {/* Header */}
+        {/* Header - Template Style */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
             {t('programs.title')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('programs.subtitle')}
           </p>
         </div>
 
-        {/* Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* Programs Grid - Practice Areas Style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {programs.map((program, index) => {
             const currentProgram = program[language];
             const IconComponent = iconMap[program.icon as keyof typeof iconMap] || Briefcase;
+            const colorClass = programColors[index % programColors.length];
             
             return (
               <Link
                 key={program.slug}
                 to={`/${program.slug}`}
-                className="program-card animate-fade-in block"
+                className={`program-card ${colorClass} animate-fade-in group`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <IconComponent className="w-6 h-6 text-primary" />
+                {/* Background Pattern */}
+                <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <circle cx="50" cy="50" r="30" fill="currentColor" opacity="0.1"/>
+                    <circle cx="30" cy="30" r="20" fill="currentColor" opacity="0.1"/>
+                    <circle cx="70" cy="70" r="15" fill="currentColor" opacity="0.1"/>
+                  </svg>
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Icon and Abbreviation */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                      <IconComponent className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-white/80 text-sm font-medium bg-white/10 px-2 py-1 rounded">
+                      ({program.icon.toUpperCase()})
+                    </span>
                   </div>
                   
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-display font-semibold mb-2 leading-tight text-card-foreground">
-                      {currentProgram.name}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                      {currentProgram.pitch}
-                    </p>
-                    
-                    {/* Bullet chips */}
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {currentProgram.core_courses.slice(0, 3).map((course, courseIndex) => (
-                        <span key={courseIndex} className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                          {course}
-                        </span>
-                      ))}
-                    </div>
-                    
-                    {/* CTA Button */}
-                    <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors">
-                      <span>{isRTL ? 'تفاصيل البرنامج' : 'Program Details'}</span>
-                      <ChevronIcon className="w-4 h-4" />
-                    </div>
+                  {/* Program Title */}
+                  <h3 className="text-xl font-display font-bold mb-3 text-white leading-tight">
+                    {currentProgram.name}
+                  </h3>
+                  
+                  {/* Learn More Button */}
+                  <div className="flex items-center text-white/90 font-medium group-hover:text-white transition-colors">
+                    <ChevronIcon className={`w-4 h-4 ${isRTL ? 'ml-2' : 'mr-2'}`} />
+                    <span>{isRTL ? 'تعرف أكثر' : 'Learn More'}</span>
                   </div>
                 </div>
               </Link>
