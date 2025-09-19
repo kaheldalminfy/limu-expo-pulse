@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ArrowRight, ArrowLeft, BookOpen } from 'lucide-react';
+import limuLogo from '@/assets/limu-logo-full.png';
 
 export const HeroSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -15,10 +16,10 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Animated GIF */}
+      {/* Background Image - using existing hero background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-slide.gif"
+          src="/images/hero-blue-bg.png"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{
@@ -53,7 +54,7 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg">
                 <img 
-                  src="/images/limu-logo-full.png" 
+                  src={limuLogo} 
                   alt="LIMU Logo" 
                   className="h-12 w-auto"
                 />
