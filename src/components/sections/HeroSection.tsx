@@ -1,21 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ArrowRight, ArrowLeft, BookOpen } from 'lucide-react';
 
-// Declare YouTube API types
-declare global {
-  interface Window {
-    YT: any;
-    onYouTubeIframeAPIReady: () => void;
-  }
-}
-
 export const HeroSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
   const ChevronIcon = isRTL ? ArrowLeft : ArrowRight;
-  const playerRef = useRef<any>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
@@ -23,88 +13,21 @@ export const HeroSection: React.FC = () => {
     });
   };
 
-  useEffect(() => {
-    // Load YouTube IFrame API
-    if (!window.YT) {
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      const firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
-    }
-
-    // Initialize player when API is ready
-    window.onYouTubeIframeAPIReady = () => {
-      if (containerRef.current && !playerRef.current) {
-        playerRef.current = new window.YT.Player('youtube-player', {
-          videoId: 'NJX1_7khZ1w',
-          playerVars: {
-            autoplay: 1,
-            mute: 1,
-            loop: 1,
-            playlist: 'NJX1_7khZ1w',
-            controls: 0,
-            showinfo: 0,
-            rel: 0,
-            iv_load_policy: 3,
-            modestbranding: 1,
-            playsinline: 1,
-            disablekb: 1,
-            fs: 0,
-            cc_load_policy: 0,
-            autohide: 1,
-            wmode: 'opaque',
-            enablejsapi: 1,
-          },
-          events: {
-            onReady: (event: any) => {
-              event.target.mute();
-              event.target.playVideo();
-              // Try to play on user interaction for mobile
-              const playOnInteraction = () => {
-                event.target.playVideo();
-                document.removeEventListener('touchstart', playOnInteraction);
-                document.removeEventListener('click', playOnInteraction);
-              };
-              document.addEventListener('touchstart', playOnInteraction, { once: true });
-              document.addEventListener('click', playOnInteraction, { once: true });
-            },
-            onStateChange: (event: any) => {
-              if (event.data === window.YT.PlayerState.ENDED) {
-                event.target.playVideo();
-              }
-            }
-          }
-        });
-      }
-    };
-
-    // If API is already loaded, initialize immediately
-    if (window.YT && window.YT.Player) {
-      window.onYouTubeIframeAPIReady();
-    }
-
-    return () => {
-      if (playerRef.current) {
-        playerRef.current.destroy();
-        playerRef.current = null;
-      }
-    };
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
-      <div className="absolute inset-0 z-0" ref={containerRef}>
+      <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 w-full h-full">
-          <div
-            id="youtube-player"
-            className="absolute inset-0 w-full h-full pointer-events-none"
+          <iframe
+            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&playlist=NJX1_7khZ1w"
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
             style={{
-              width: '100vw',
-              height: '100vh',
-              minWidth: '100%',
-              minHeight: '100%',
-              transform: 'scale(1.02)',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
             }}
           />
         </div>
