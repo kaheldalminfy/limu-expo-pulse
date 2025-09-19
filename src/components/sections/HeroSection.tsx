@@ -17,20 +17,18 @@ export const HeroSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Animated GIF */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 w-full h-full">
-          <img
-            src="/images/hero-slide.gif"
-            alt="LIMU Hero Animation"
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
-        </div>
-        {/* Light overlay for better text readability - reduced opacity */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 z-10" />
+        <img
+          src="/images/hero-slide.gif"
+          alt="LIMU Hero Animation" 
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }}
+        />
+        {/* Subtle overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-transparent to-black/5" />
       </div>
 
       {/* Template-style Header Navigation */}
@@ -111,8 +109,6 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Dark blue overlay for text contrast */}
-      <div className="absolute inset-0 bg-blue-900/20" />
 
       {/* Optional: Minimal Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
