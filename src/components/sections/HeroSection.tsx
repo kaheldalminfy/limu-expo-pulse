@@ -15,21 +15,25 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image - using existing hero background */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero-blue-bg.png"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{
-            width: '100vw',
-            height: '100vh',
-            minWidth: '100%',
-            minHeight: '100%',
-            objectFit: 'cover',
-            objectPosition: 'center',
-          }}
-        />
+        <div className="absolute inset-0 w-full h-full">
+          <iframe
+            src="https://www.youtube.com/embed/NJX1_7khZ1w?autoplay=1&mute=1&loop=1&playlist=NJX1_7khZ1w&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&enablejsapi=1&disablekb=1&fs=0&cc_load_policy=0&hl=ar&color=white&autohide=1&wmode=opaque"
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer"
+            allowFullScreen
+            style={{
+              width: '100vw',
+              height: '100vh',
+              minWidth: '100%',
+              minHeight: '100%',
+              objectFit: 'cover',
+              transform: 'scale(1.02)',
+            }}
+          />
+        </div>
         {/* Light overlay for better text readability - reduced opacity */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/5 z-10" />
       </div>
@@ -53,12 +57,9 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg">
                 <img 
-                  src="/images/limu-main-logo.png" 
+                  src="/images/limu-logo-full.png" 
                   alt="LIMU Logo" 
                   className="h-12 w-auto"
-                  onError={(e) => {
-                    e.currentTarget.src = '/images/limu-logo-1.png';
-                  }}
                 />
               </div>
             </div>

@@ -269,14 +269,9 @@ export const ProgramPageTemplate: React.FC<ProgramPageTemplateProps> = ({
                       className="w-full h-64 object-cover"
                     />
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                      <a 
-                        href={video.videoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/90 transition-colors hover:scale-110"
-                      >
+                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/90 transition-colors">
                         <Video className="w-8 h-8 text-white ml-1" />
-                      </a>
+                      </div>
                     </div>
                     <div className="absolute top-4 left-4">
                       <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -296,15 +291,10 @@ export const ProgramPageTemplate: React.FC<ProgramPageTemplateProps> = ({
                     <p className="text-gray-600 leading-relaxed mb-4">
                       {video.description}
                     </p>
-                    <a 
-                      href={video.videoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-300"
-                    >
+                    <button className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-300 flex items-center gap-2">
                       <Video className="w-4 h-4" />
                       {isRTL ? 'شاهد الفيديو' : 'Watch Video'}
-                    </a>
+                    </button>
                   </div>
                 </div>
               ))}
