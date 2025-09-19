@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { ArrowRight, ArrowLeft, BookOpen } from 'lucide-react';
-import limuLogo from '@/assets/limu-logo-full.png';
 
 export const HeroSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -54,9 +53,12 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg">
                 <img 
-                  src={limuLogo} 
+                  src="/images/limu-main-logo.png" 
                   alt="LIMU Logo" 
                   className="h-12 w-auto"
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/limu-logo-1.png';
+                  }}
                 />
               </div>
             </div>
